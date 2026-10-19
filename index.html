@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Credit Card ABC</title>
+  <meta name="description" content="A free, no-login journey in English and Bangla that teaches how to use a credit card as a tool, not as free money, and how to stay riba-free by design." />
+  <meta name="theme-color" content="#F5F2EA" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#14130F" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Plain, highly legible faces: Inter for Latin, Noto Sans Bengali for Bangla (both SIL OFL). -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="#/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="18" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12.5h26" stroke="currentColor" stroke-width="2.4"/><path d="M8 20h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span id="brand-name">Credit Card ABC</span>
+    </a>
+    <nav class="bar-nav" aria-label="Primary">
+      <a href="#/map" data-nav="map">Map</a>
+      <a href="#/pledge" data-nav="pledge">Rules</a>
+      <button type="button" class="link" id="reset">Start over</button>
+      <button type="button" class="lang" id="lang" lang="bn">বাংলা</button>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
+  <noscript><p class="noscript">Credit Card ABC needs JavaScript to run. Nothing is sent anywhere. / এই সাইট চালাতে JavaScript লাগবে। কোনো তথ্য কোথাও পাঠানো হয় না।</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

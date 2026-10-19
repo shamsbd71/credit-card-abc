@@ -1,0 +1,250 @@
+{
+  "limit": {
+    "term": {
+      "en": "Card limit",
+      "bn": "কার্ডের লিমিট"
+    },
+    "inline": {
+      "en": "card limit",
+      "bn": "কার্ডের লিমিট"
+    },
+    "def": {
+      "en": "The most money the bank lets you spend with the card. It is the bank's money, not yours. You must pay it back.",
+      "bn": "কার্ড দিয়ে সর্বোচ্চ কত টাকা খরচ করা যাবে, তা ব্যাংক ঠিক করে দেয়। এটা ব্যাংকের টাকা, আপনার না। পরে ফেরত দিতে হয়।"
+    }
+  },
+  "bill": {
+    "term": {
+      "en": "Monthly bill (statement)",
+      "bn": "মাসিক বিল (স্টেটমেন্ট)"
+    },
+    "inline": {
+      "en": "monthly bill (statement)",
+      "bn": "মাসিক বিল (স্টেটমেন্ট)"
+    },
+    "def": {
+      "en": "Once a month, the bank adds up everything you bought with the card and sends you one bill.",
+      "bn": "মাসে একবার ব্যাংক কার্ড দিয়ে করা সব কেনাকাটা যোগ করে আপনাকে একটা বিল পাঠায়।"
+    }
+  },
+  "bill_day": {
+    "term": {
+      "en": "Bill day (statement date)",
+      "bn": "বিল তৈরির দিন (স্টেটমেন্ট ডেট)"
+    },
+    "inline": {
+      "en": "bill day (statement date)",
+      "bn": "বিল তৈরির দিন (স্টেটমেন্ট ডেট)"
+    },
+    "def": {
+      "en": "The day each month when the bank closes the list of your purchases and makes your bill.",
+      "bn": "প্রতি মাসের যে দিনে ব্যাংক আপনার কেনাকাটার হিসাব বন্ধ করে বিল তৈরি করে।"
+    }
+  },
+  "due": {
+    "term": {
+      "en": "Last day to pay (due date)",
+      "bn": "বিল দেওয়ার শেষ দিন (ডিউ ডেট)"
+    },
+    "inline": {
+      "en": "last day to pay (due date)",
+      "bn": "বিল দেওয়ার শেষ দিন (ডিউ ডেট)"
+    },
+    "def": {
+      "en": "The full bill must be paid by this day. It is usually 15–25 days after the bill day.",
+      "bn": "এই দিনের মধ্যে পুরো বিল দিতে হবে। সাধারণত বিল তৈরির ১৫–২৫ দিন পরে।"
+    }
+  },
+  "grace": {
+    "term": {
+      "en": "Free days (grace period)",
+      "bn": "সুদ-ছাড়া সময় (গ্রেস পিরিয়ড)"
+    },
+    "inline": {
+      "en": "free days (grace period)",
+      "bn": "সুদ-ছাড়া সময় (গ্রেস পিরিয়ড)"
+    },
+    "def": {
+      "en": "The days between buying and the last day to pay. Pay the full bill within this time and you pay nothing extra.",
+      "bn": "কেনার দিন থেকে বিল দেওয়ার শেষ দিন পর্যন্ত সময়। এর মধ্যে পুরো বিল দিলে এক টাকাও বাড়তি লাগে না।"
+    }
+  },
+  "total_due": {
+    "term": {
+      "en": "Full bill (total due)",
+      "bn": "পুরো বিল (টোটাল ডিউ)"
+    },
+    "inline": {
+      "en": "full bill",
+      "bn": "পুরো বিল (টোটাল ডিউ)"
+    },
+    "def": {
+      "en": "Everything you spent on the card in the last month. Pay this whole amount and you pay zero interest.",
+      "bn": "গত মাসে কার্ডে যত খরচ করেছেন, তার পুরোটা। এই পুরো টাকা দিলে সুদ শূন্য।"
+    }
+  },
+  "min_due": {
+    "term": {
+      "en": "Minimum payment (minimum due)",
+      "bn": "সর্বনিম্ন পরিশোধ (মিনিমাম ডিউ)"
+    },
+    "inline": {
+      "en": "minimum payment",
+      "bn": "সর্বনিম্ন পরিশোধ (মিনিমাম ডিউ)"
+    },
+    "def": {
+      "en": "A small part of the bill (about 5%). Paying it avoids the late fee, but if you pay only this, interest starts, often on the whole bill.",
+      "bn": "বিলের ছোট একটা অংশ (প্রায় ৫%), যা দিলে লেট ফি লাগে না। কিন্তু শুধু এটুকু দিলে সুদ শুরু হয়, প্রায়ই পুরো বিলের ওপর।"
+    }
+  },
+  "interest": {
+    "term": {
+      "en": "Interest (riba)",
+      "bn": "সুদ (রিবা)"
+    },
+    "inline": {
+      "en": "interest (riba)",
+      "bn": "সুদ (রিবা)"
+    },
+    "def": {
+      "en": "Extra money the bank takes when you don't pay the full bill on time. In Islam this is riba, and it is forbidden.",
+      "bn": "সময়মতো পুরো বিল না দিলে ব্যাংক যে বাড়তি টাকা নেয়। ইসলামে একে রিবা বলে, যা হারাম।"
+    }
+  },
+  "cash_advance": {
+    "term": {
+      "en": "Cash advance",
+      "bn": "ক্যাশ অ্যাডভান্স"
+    },
+    "inline": {
+      "en": "cash advance",
+      "bn": "ক্যাশ অ্যাডভান্স"
+    },
+    "def": {
+      "en": "Taking cash out of an ATM with a credit card. You pay a fee, and interest starts the same day.",
+      "bn": "ক্রেডিট কার্ড দিয়ে ATM থেকে নগদ টাকা তোলা। এতে ফি লাগে, আর সেদিন থেকেই সুদ শুরু হয়।"
+    }
+  },
+  "emi": {
+    "term": {
+      "en": "Installments (EMI)",
+      "bn": "কিস্তি (EMI)"
+    },
+    "inline": {
+      "en": "installments (EMI)",
+      "bn": "কিস্তি (EMI)"
+    },
+    "def": {
+      "en": "Paying for something in monthly parts. It often comes with extra fees or interest.",
+      "bn": "কোনো জিনিসের দাম মাসে মাসে ভাগ করে দেওয়া। প্রায়ই এতে বাড়তি ফি বা সুদ থাকে।"
+    }
+  },
+  "late_fee": {
+    "term": {
+      "en": "Late fee",
+      "bn": "লেট ফি (জরিমানা)"
+    },
+    "inline": {
+      "en": "late fee",
+      "bn": "লেট ফি (জরিমানা)"
+    },
+    "def": {
+      "en": "A fine the bank charges if you don't pay at least the minimum by the last day.",
+      "bn": "শেষ দিনের মধ্যে অন্তত সর্বনিম্ন পরিশোধ না দিলে ব্যাংক যে জরিমানা নেয়।"
+    }
+  },
+  "autopay": {
+    "term": {
+      "en": "Auto-pay",
+      "bn": "অটো-পে"
+    },
+    "inline": {
+      "en": "auto-pay",
+      "bn": "অটো-পে"
+    },
+    "def": {
+      "en": "You tell the bank to take the full bill from your bank account automatically every month, so you never forget.",
+      "bn": "ব্যাংককে বলে রাখা, যেন প্রতি মাসে আপনার অ্যাকাউন্ট থেকে নিজে থেকেই পুরো বিল কেটে নেয়। তাহলে ভুলে যাওয়ার ভয় থাকে না।"
+    }
+  },
+  "savings": {
+    "term": {
+      "en": "Emergency savings",
+      "bn": "জরুরি জমা"
+    },
+    "inline": {
+      "en": "emergency savings",
+      "bn": "জরুরি জমা"
+    },
+    "def": {
+      "en": "Money you keep aside only for sudden needs, like illness, a broken phone or losing a job.",
+      "bn": "শুধু হঠাৎ দরকারের জন্য আলাদা করে রাখা টাকা, যেমন অসুখ, ফোন নষ্ট হওয়া বা চাকরি চলে যাওয়া।"
+    }
+  },
+  "debit": {
+    "term": {
+      "en": "Debit card",
+      "bn": "ডেবিট কার্ড"
+    },
+    "inline": {
+      "en": "debit card",
+      "bn": "ডেবিট কার্ড"
+    },
+    "def": {
+      "en": "A card that spends money straight from your own bank account. No loan, so no interest.",
+      "bn": "যে কার্ড সরাসরি আপনার নিজের ব্যাংক অ্যাকাউন্ট থেকে টাকা খরচ করে। কোনো ধার নেই, তাই সুদও নেই।"
+    }
+  },
+  "prepaid": {
+    "term": {
+      "en": "Prepaid card",
+      "bn": "প্রিপেইড কার্ড"
+    },
+    "inline": {
+      "en": "prepaid card",
+      "bn": "প্রিপেইড কার্ড"
+    },
+    "def": {
+      "en": "You put money on the card first, then spend it, like a mobile recharge. You can't spend more than you put in.",
+      "bn": "আগে কার্ডে টাকা ভরে তারপর খরচ করবেন, মোবাইল রিচার্জের মতো। যা ভরেছেন তার বেশি খরচ করা যায় না।"
+    }
+  },
+  "dcc": {
+    "term": {
+      "en": "\"Pay in taka?\" abroad",
+      "bn": "বিদেশে \"টাকায় দেবেন?\""
+    },
+    "def": {
+      "en": "Some card machines abroad offer to charge you in taka. It looks easy, but the rate is usually worse. Choose the local currency.",
+      "bn": "বিদেশে কিছু কার্ড মেশিন টাকায় চার্জ করার প্রস্তাব দেয়। দেখতে সহজ, কিন্তু রেট সাধারণত খারাপ। স্থানীয় মুদ্রা বেছে নিন।"
+    }
+  },
+  "endorsement": {
+    "term": {
+      "en": "Dollar endorsement",
+      "bn": "ডলার এনডোর্সমেন্ট"
+    },
+    "inline": {
+      "en": "dollar endorsement",
+      "bn": "ডলার এনডোর্সমেন্ট"
+    },
+    "def": {
+      "en": "Permission recorded against your passport that lets you spend foreign currency with your card. Required in Bangladesh.",
+      "bn": "পাসপোর্টে নথিভুক্ত অনুমতি, যার মাধ্যমে কার্ডে বিদেশি মুদ্রা খরচ করা যায়। বাংলাদেশে এটা লাগে।"
+    }
+  },
+  "qard_hasan": {
+    "term": {
+      "en": "Qard hasan",
+      "bn": "কর্জে হাসানা"
+    },
+    "inline": {
+      "en": "qard hasan",
+      "bn": "কর্জে হাসানা"
+    },
+    "def": {
+      "en": "An interest-free loan given out of goodwill, often by family or friends.",
+      "bn": "সুদ ছাড়া, ভালোবাসা থেকে দেওয়া ধার। সাধারণত পরিবার বা বন্ধুরা দেন।"
+    }
+  }
+}

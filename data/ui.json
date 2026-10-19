@@ -1,0 +1,786 @@
+{
+  "brand": {
+    "en": "Credit Card ABC",
+    "bn": "ক্রেডিট কার্ড ABC"
+  },
+  "doc_title": {
+    "en": "Credit Card ABC: use a card without paying interest",
+    "bn": "ক্রেডিট কার্ড ABC — সুদ ছাড়া কার্ড ব্যবহার শিখুন"
+  },
+  "nav_map": {
+    "en": "My lessons",
+    "bn": "আমার পাঠ"
+  },
+  "nav_rules": {
+    "en": "My rules",
+    "bn": "আমার নিয়ম"
+  },
+  "nav_reset": {
+    "en": "Start over",
+    "bn": "আবার শুরু"
+  },
+  "lang_switch": {
+    "en": "বাংলা",
+    "bn": "English"
+  },
+  "lang_switch_label": {
+    "en": "পড়ুন বাংলায়",
+    "bn": "Read in English"
+  },
+  "hero_kicker": {
+    "en": "Free · No sign-up · Nothing leaves your device",
+    "bn": "বিনামূল্যে · সাইন-আপ লাগবে না · কোনো তথ্য বাইরে যায় না"
+  },
+  "hero_title_a": {
+    "en": "A credit card is ",
+    "bn": "ক্রেডিট কার্ড মানে "
+  },
+  "hero_title_em": {
+    "en": "the bank's money",
+    "bn": "ব্যাংকের টাকা"
+  },
+  "hero_title_b": {
+    "en": ", not yours.",
+    "bn": ", আপনার না।"
+  },
+  "hero_body": {
+    "en": "Learn in about 30 minutes how to use a card the safe way: spend only money you have, pay the full bill every month, and never pay a single taka of interest.",
+    "bn": "প্রায় ৩০ মিনিটে শিখুন নিরাপদে কার্ড ব্যবহারের উপায়: শুধু নিজের টাকা খরচ, প্রতি মাসে পুরো বিল, আর এক টাকাও সুদ নয়।"
+  },
+  "cta_start": {
+    "en": "Start now",
+    "bn": "এখনই শুরু করুন"
+  },
+  "cta_resume": {
+    "en": "Continue: lesson {n}",
+    "bn": "চালিয়ে যান: পাঠ {n}"
+  },
+  "cta_rules": {
+    "en": "See my rules",
+    "bn": "আমার নিয়ম দেখুন"
+  },
+  "strip_aria": {
+    "en": "A card month: 30 days of buying, then 20 days to pay the full bill for free, then interest.",
+    "bn": "কার্ডের এক মাস: ৩০ দিন কেনাকাটা, তারপর ২০ দিন বিনা খরচে পুরো বিল দেওয়ার সময়, তারপর সুদ।"
+  },
+  "strip_title": {
+    "en": "How one card month works",
+    "bn": "কার্ডের এক মাস কীভাবে চলে"
+  },
+  "legend_spend": {
+    "en": "30 days: you buy",
+    "bn": "৩০ দিন: আপনি কেনেন"
+  },
+  "legend_grace": {
+    "en": "20 days: pay the full bill, nothing extra",
+    "bn": "২০ দিন: পুরো বিল দিন, বাড়তি কিছু না"
+  },
+  "legend_riba": {
+    "en": "After that: interest (riba)",
+    "bn": "এরপর: সুদ (রিবা)"
+  },
+  "bill_made": {
+    "en": "Bill is made",
+    "bn": "বিল তৈরি"
+  },
+  "last_day": {
+    "en": "Last day to pay",
+    "bn": "শেষ দিন"
+  },
+  "how_kicker": {
+    "en": "How it works",
+    "bn": "কীভাবে চলে"
+  },
+  "how_title": {
+    "en": "Two short steps. We guide you all the way.",
+    "bn": "দুটি ছোট ধাপ। পুরো পথ আমরা দেখিয়ে দেব।"
+  },
+  "m1_t": {
+    "en": "Answer 9 easy questions",
+    "bn": "৯টি সহজ প্রশ্নের উত্তর দিন"
+  },
+  "m1_b": {
+    "en": "About how money comes and goes in your life. No names, no numbers. About 2 minutes.",
+    "bn": "আপনার জীবনে টাকা কীভাবে আসে-যায়, তা নিয়ে। কোনো নাম বা অঙ্ক নয়। প্রায় ২ মিনিট।"
+  },
+  "m2_t": {
+    "en": "Follow your lessons",
+    "bn": "আপনার পাঠগুলো পড়ুন"
+  },
+  "m2_b": {
+    "en": "Short lessons with pictures, real examples and simple tools. Each one leads straight to the next.",
+    "bn": "ছবি, বাস্তব উদাহরণ আর সহজ টুলসহ ছোট ছোট পাঠ। একটা শেষ হলে সরাসরি পরেরটা।"
+  },
+  "m3_t": {
+    "en": "Get your rules",
+    "bn": "নিজের নিয়ম নিয়ে যান"
+  },
+  "m3_b": {
+    "en": "At the end you get a short list of rules to keep, and an honest answer: is a card right for you now?",
+    "bn": "শেষে পাবেন মেনে চলার কয়েকটি নিয়ম, আর একটি সৎ উত্তর: এখন কি কার্ড আপনার জন্য ঠিক?"
+  },
+  "manifesto_a": {
+    "en": "The bank lends you ",
+    "bn": "ব্যাংক আপনাকে ধার দেয় "
+  },
+  "manifesto_em": {
+    "en": "time",
+    "bn": "সময়"
+  },
+  "manifesto_b": {
+    "en": ". Pay it all back on time, and you pay no interest.",
+    "bn": "। সময়মতো পুরোটা ফেরত দিলে কোনো সুদ লাগে না।"
+  },
+  "manifesto_sub": {
+    "en": "The one idea this whole site is built on",
+    "bn": "এই পুরো সাইটের মূল কথা"
+  },
+  "foot_left": {
+    "en": "Credit Card ABC · free and open source (MIT)",
+    "bn": "ক্রেডিট কার্ড ABC · বিনামূল্যে ও ওপেন সোর্স (MIT)"
+  },
+  "foot_right": {
+    "en": "For learning only. Not financial or religious advice. Ask a scholar you trust.",
+    "bn": "শুধু শেখার জন্য। আর্থিক বা ধর্মীয় পরামর্শ নয়। বিশ্বস্ত আলেমের পরামর্শ নিন।"
+  },
+  "begin": {
+    "en": "Start the questions",
+    "bn": "প্রশ্ন শুরু করুন"
+  },
+  "back": {
+    "en": "Back",
+    "bn": "পেছনে"
+  },
+  "continue": {
+    "en": "Next",
+    "bn": "পরেরটা"
+  },
+  "finish_lesson": {
+    "en": "Finish lesson",
+    "bn": "পাঠ শেষ"
+  },
+  "q_of": {
+    "en": "Question {n} of {t}",
+    "bn": "প্রশ্ন {n}/{t}"
+  },
+  "press_keys": {
+    "en": "Tip: you can press 1–{n} on a keyboard",
+    "bn": "টিপ: কিবোর্ডে ১–{n} চাপতে পারেন"
+  },
+  "picked_n": {
+    "en": "{n} selected",
+    "bn": "{n}টি বাছাই করা হয়েছে"
+  },
+  "result_kicker": {
+    "en": "Your result",
+    "bn": "আপনার ফলাফল"
+  },
+  "noticed": {
+    "en": "What we noticed from your answers",
+    "bn": "আপনার উত্তর থেকে যা বুঝলাম"
+  },
+  "plan_title": {
+    "en": "Step 2 of 2 · Your lessons",
+    "bn": "ধাপ ২/২ · আপনার পাঠ"
+  },
+  "plan_sum": {
+    "en": "{n} short lessons · about {m} minutes in total",
+    "bn": "{n}টি ছোট পাঠ · মোট প্রায় {m} মিনিট"
+  },
+  "plan_hint": {
+    "en": "Each lesson leads straight into the next. You can stop any time; we'll remember where you were.",
+    "bn": "একটা পাঠ শেষ হলে সরাসরি পরেরটা শুরু হবে। যেকোনো সময় থামতে পারেন, কোথায় ছিলেন আমরা মনে রাখব।"
+  },
+  "start_lesson_1": {
+    "en": "Start lesson 1",
+    "bn": "পাঠ ১ শুরু করুন"
+  },
+  "privacy": {
+    "en": "Your answers stay on this device. Nothing is uploaded. \"Start over\" deletes them.",
+    "bn": "আপনার উত্তর এই ডিভাইসেই থাকে। কিছুই আপলোড হয় না। \"আবার শুরু\" চাপলে মুছে যায়।"
+  },
+  "your_map": {
+    "en": "My lessons",
+    "bn": "আমার পাঠ"
+  },
+  "map_desc": {
+    "en": "{n} lessons picked for you. Finished lessons can be opened again any time.",
+    "bn": "আপনার জন্য {n}টি পাঠ বাছাই করা হয়েছে। শেষ করা পাঠ যেকোনো সময় আবার খোলা যাবে।"
+  },
+  "walked": {
+    "en": "finished",
+    "bn": "শেষ"
+  },
+  "resume_x": {
+    "en": "Continue: {x}",
+    "bn": "চালিয়ে যান: {x}"
+  },
+  "see_rules": {
+    "en": "See my rules",
+    "bn": "আমার নিয়ম দেখুন"
+  },
+  "tag_min": {
+    "en": "{n} min",
+    "bn": "{n} মিনিট"
+  },
+  "tag_finale": {
+    "en": "Last step",
+    "bn": "শেষ ধাপ"
+  },
+  "tag_for_you": {
+    "en": "For you",
+    "bn": "আপনার জন্য"
+  },
+  "tag_riba": {
+    "en": "Avoid interest",
+    "bn": "সুদ এড়ান"
+  },
+  "locked": {
+    "en": "Finish the lessons before this one first",
+    "bn": "আগে এর আগের পাঠগুলো শেষ করুন"
+  },
+  "lesson_of": {
+    "en": "Lesson {n} of {t}",
+    "bn": "পাঠ {n}/{t}"
+  },
+  "lbl_story": {
+    "en": "A real-life example",
+    "bn": "বাস্তব একটি উদাহরণ"
+  },
+  "lbl_concept": {
+    "en": "Simply put",
+    "bn": "সহজ কথায়"
+  },
+  "lbl_quiz": {
+    "en": "Quick check: choose one answer",
+    "bn": "ছোট্ট যাচাই: একটি উত্তর বাছুন"
+  },
+  "lbl_reflect": {
+    "en": "Your choice",
+    "bn": "আপনার সিদ্ধান্ত"
+  },
+  "lbl_keep": {
+    "en": "Remember this",
+    "bn": "এটা মনে রাখুন"
+  },
+  "lbl_sim": {
+    "en": "Try it yourself",
+    "bn": "নিজে করে দেখুন"
+  },
+  "close_lesson": {
+    "en": "Close lesson",
+    "bn": "পাঠ বন্ধ করুন"
+  },
+  "right": {
+    "en": "Correct!",
+    "bn": "সঠিক!"
+  },
+  "wrong": {
+    "en": "Not quite. Read why, then try another answer.",
+    "bn": "হয়নি। কেন হয়নি পড়ুন, তারপর আরেকটা উত্তর বাছুন।"
+  },
+  "quiz_gate": {
+    "en": "Choose the right answer to go on.",
+    "bn": "এগোতে সঠিক উত্তরটি বাছুন।"
+  },
+  "reflect_gate": {
+    "en": "Choose one to go on.",
+    "bn": "এগোতে একটি বাছুন।"
+  },
+  "tap_words": {
+    "en": "Tip: tap any underlined word to see what it means.",
+    "bn": "টিপ: দাগ দেওয়া যেকোনো শব্দে চাপ দিলে মানে দেখতে পাবেন।"
+  },
+  "term_close": {
+    "en": "Got it",
+    "bn": "বুঝেছি"
+  },
+  "done_kicker": {
+    "en": "Lesson {n} of {t} finished",
+    "bn": "পাঠ {n}/{t} শেষ"
+  },
+  "done_title": {
+    "en": "Well done!",
+    "bn": "চমৎকার!"
+  },
+  "done_rule": {
+    "en": "What you learned",
+    "bn": "যা শিখলেন"
+  },
+  "up_next": {
+    "en": "Up next",
+    "bn": "এরপর"
+  },
+  "next_lesson": {
+    "en": "Start next lesson",
+    "bn": "পরের পাঠ শুরু করুন"
+  },
+  "take_break": {
+    "en": "Take a break",
+    "bn": "একটু বিরতি নিই"
+  },
+  "all_done_title": {
+    "en": "You finished all your lessons!",
+    "bn": "আপনি সব পাঠ শেষ করেছেন!"
+  },
+  "all_done_body": {
+    "en": "One last step: see your result and the rules to keep.",
+    "bn": "শেষ একটা ধাপ: আপনার ফলাফল আর মেনে চলার নিয়মগুলো দেখুন।"
+  },
+  "cyc_title": {
+    "en": "When you buy changes how long you get to pay",
+    "bn": "কবে কিনছেন, তার ওপর নির্ভর করে কতদিন সময় পাবেন"
+  },
+  "cyc_desc": {
+    "en": "Move the first slider to choose the day you buy. Then choose how you'll pay on the last day, and see what happens.",
+    "bn": "প্রথম স্লাইডার সরিয়ে কেনার দিন বাছুন। তারপর শেষ দিনে কীভাবে দেবেন তা বাছুন, আর দেখুন কী হয়।"
+  },
+  "cyc_day": {
+    "en": "Day of the month you buy",
+    "bn": "মাসের কোন দিন কিনছেন"
+  },
+  "cyc_day_n": {
+    "en": "Day {n}",
+    "bn": "{n} তারিখ"
+  },
+  "amount": {
+    "en": "How much you spend",
+    "bn": "কত টাকা খরচ"
+  },
+  "cyc_pay": {
+    "en": "On the last day, I pay…",
+    "bn": "শেষ দিনে আমি দেব…"
+  },
+  "pay_full": {
+    "en": "The full bill",
+    "bn": "পুরো বিল"
+  },
+  "pay_min": {
+    "en": "Only the minimum",
+    "bn": "শুধু সর্বনিম্ন"
+  },
+  "pay_half": {
+    "en": "Half",
+    "bn": "অর্ধেক"
+  },
+  "pay_late": {
+    "en": "Nothing",
+    "bn": "কিছুই না"
+  },
+  "st_free_days": {
+    "en": "Days to pay, free",
+    "bn": "বিনা খরচে সময়"
+  },
+  "st_days": {
+    "en": "{n} days",
+    "bn": "{n} দিন"
+  },
+  "st_grace": {
+    "en": "Free days",
+    "bn": "সুদ-ছাড়া সময়"
+  },
+  "st_lost": {
+    "en": "Lost",
+    "bn": "হারালেন"
+  },
+  "st_pay_now": {
+    "en": "You pay on the last day",
+    "bn": "শেষ দিনে দিচ্ছেন"
+  },
+  "st_riba_next": {
+    "en": "Interest added next month",
+    "bn": "পরের মাসে সুদ যোগ হবে"
+  },
+  "st_late_fee": {
+    "en": "Late fine",
+    "bn": "জরিমানা"
+  },
+  "cyc_bad": {
+    "en": "Because you didn't pay the full bill, the free days are gone. The bank charges interest on the whole {amt} for about **{d} days**.",
+    "bn": "পুরো বিল না দেওয়ায় সুদ-ছাড়া সময় শেষ। ব্যাংক পুরো {amt}-এর ওপর প্রায় **{d} দিনের** সুদ নেবে।"
+  },
+  "cyc_good": {
+    "en": "You paid the full bill. The bank lent you money for **{d} days** and took nothing extra. This is the right way.",
+    "bn": "আপনি পুরো বিল দিয়েছেন। ব্যাংক **{d} দিন** ধার দিল, কিন্তু এক টাকাও বাড়তি নিল না। এটাই সঠিক উপায়।"
+  },
+  "min_title": {
+    "en": "What happens if you pay only the minimum?",
+    "bn": "শুধু সর্বনিম্ন দিলে কী হয়?"
+  },
+  "min_desc": {
+    "en": "Choose an unpaid bill amount and how much you pay each month. No new shopping. See how long it takes to finish, and how much interest you pay.",
+    "bn": "বাকি বিলের অঙ্ক আর প্রতি মাসে কত দেবেন তা বাছুন। নতুন কেনাকাটা নেই। দেখুন শেষ হতে কত সময় লাগে, আর কত সুদ দিতে হয়।"
+  },
+  "min_bal": {
+    "en": "Your bill",
+    "bn": "আপনার বিল"
+  },
+  "min_each": {
+    "en": "Every month I pay…",
+    "bn": "প্রতি মাসে দেব…"
+  },
+  "rate_min": {
+    "en": "Only the minimum",
+    "bn": "শুধু সর্বনিম্ন"
+  },
+  "rate_10": {
+    "en": "10% of it",
+    "bn": "এর ১০%"
+  },
+  "rate_25": {
+    "en": "25% of it",
+    "bn": "এর ২৫%"
+  },
+  "rate_full": {
+    "en": "The full bill",
+    "bn": "পুরো বিল"
+  },
+  "st_time": {
+    "en": "Time to finish",
+    "bn": "শেষ হতে সময়"
+  },
+  "st_total_riba": {
+    "en": "Total interest you pay",
+    "bn": "মোট সুদ দেবেন"
+  },
+  "st_total_paid": {
+    "en": "Total you pay",
+    "bn": "মোট দেবেন"
+  },
+  "unit_mo": {
+    "en": "{n} months",
+    "bn": "{n} মাস"
+  },
+  "unit_yr": {
+    "en": "{n} years",
+    "bn": "{n} বছর"
+  },
+  "min_good": {
+    "en": "Full bill: zero interest, and you're done in one month.",
+    "bn": "পুরো বিল: সুদ শূন্য, এক মাসেই শেষ।"
+  },
+  "min_bad": {
+    "en": "To clear {b}, you would pay **{t}** in total. The minimum payment is designed to feel small.",
+    "bn": "{b} শোধ করতে মোট দিতে হবে **{t}**। সর্বনিম্ন পরিশোধ এমনভাবে বানানো, যাতে ছোট মনে হয়।"
+  },
+  "mir_title": {
+    "en": "Will your card spending match your bank money?",
+    "bn": "কার্ডের খরচ কি ব্যাংকের টাকার সমান থাকছে?"
+  },
+  "mir_desc": {
+    "en": "First, set how much free money you have (after rent, bills and food). Then tap things to buy with the card.",
+    "bn": "প্রথমে ঠিক করুন আপনার মুক্ত টাকা কত (ভাড়া, বিল আর খাবারের পরে)। তারপর কার্ডে কিনতে জিনিসগুলোতে চাপ দিন।"
+  },
+  "mir_own": {
+    "en": "Free money in my bank",
+    "bn": "ব্যাংকে মুক্ত টাকা"
+  },
+  "mir_mine": {
+    "en": "My money: {x}",
+    "bn": "আমার টাকা: {x}"
+  },
+  "mir_card": {
+    "en": "On card: {x}",
+    "bn": "কার্ডে খরচ: {x}"
+  },
+  "mir_over": {
+    "en": "**{x}** is more than the money you have. That part is a loan you'll struggle to repay, and it can turn into interest.",
+    "bn": "**{x}** আপনার টাকার চেয়ে বেশি। এই অংশটা এমন ধার, যা শোধ করা কঠিন হবে, আর তা সুদে গড়াতে পারে।"
+  },
+  "mir_ok": {
+    "en": "Good. Your card spending is covered by your own money. You can pay the full bill.",
+    "bn": "ভালো। কার্ডের খরচ আপনার নিজের টাকায় ঢাকা আছে। পুরো বিল দিতে পারবেন।"
+  },
+  "mir_empty": {
+    "en": "Tap something below to buy it with the card.",
+    "bn": "কার্ডে কিনতে নিচের কোনো জিনিসে চাপ দিন।"
+  },
+  "buy_groceries": {
+    "en": "Groceries",
+    "bn": "বাজার"
+  },
+  "buy_electric": {
+    "en": "Electricity bill",
+    "bn": "বিদ্যুৎ বিল"
+  },
+  "buy_dinner": {
+    "en": "Dinner out",
+    "bn": "বাইরে খাওয়া"
+  },
+  "buy_phone": {
+    "en": "New phone",
+    "bn": "নতুন ফোন"
+  },
+  "buy_flight": {
+    "en": "Air ticket home",
+    "bn": "বাড়ি ফেরার টিকিট"
+  },
+  "buy_jacket": {
+    "en": "Jacket on sale",
+    "bn": "সেলের জ্যাকেট"
+  },
+  "f_you_buy": {
+    "en": "You buy something",
+    "bn": "আপনি কিছু কিনলেন"
+  },
+  "f_bank_pays": {
+    "en": "The bank pays the shop today",
+    "bn": "ব্যাংক আজ দোকানকে টাকা দিল"
+  },
+  "f_you_repay": {
+    "en": "You pay the bank back later",
+    "bn": "পরে আপনি ব্যাংককে ফেরত দেন"
+  },
+  "f_full_ok": {
+    "en": "Pay the full bill on time → ৳0 extra",
+    "bn": "সময়মতো পুরো বিল → ৳০ বাড়তি"
+  },
+  "f_late_bad": {
+    "en": "Pay late or less → bank adds interest",
+    "bn": "দেরিতে বা কম দিলে → ব্যাংক সুদ যোগ করে"
+  },
+  "f_limit": {
+    "en": "Card limit (bank's money)",
+    "bn": "কার্ডের লিমিট (ব্যাংকের টাকা)"
+  },
+  "f_salary": {
+    "en": "Rafi's salary",
+    "bn": "রাফির বেতন"
+  },
+  "f_free": {
+    "en": "Free after rent, food, bills",
+    "bn": "ভাড়া, খাবার, বিলের পরে মুক্ত"
+  },
+  "f_free_note": {
+    "en": "Only this can go on the card",
+    "bn": "শুধু এটুকুই কার্ডে খরচ করা যাবে"
+  },
+  "f_buy_days": {
+    "en": "Day 1 to 30: you buy",
+    "bn": "১ থেকে ৩০ তারিখ: কেনাকাটা"
+  },
+  "f_pay_days": {
+    "en": "Next 20 days: pay the full bill, free",
+    "bn": "পরের ২০ দিন: পুরো বিল দিন, বিনা খরচে"
+  },
+  "f_interest_days": {
+    "en": "After: interest",
+    "bn": "এরপর: সুদ"
+  },
+  "f_bill_head": {
+    "en": "Your card bill",
+    "bn": "আপনার কার্ডের বিল"
+  },
+  "f_bill_full": {
+    "en": "Full bill",
+    "bn": "পুরো বিল"
+  },
+  "f_bill_min": {
+    "en": "Minimum payment",
+    "bn": "সর্বনিম্ন পরিশোধ"
+  },
+  "f_bill_due": {
+    "en": "Last day to pay",
+    "bn": "বিল দেওয়ার শেষ দিন"
+  },
+  "f_bill_due_v": {
+    "en": "25 October",
+    "bn": "২৫ অক্টোবর"
+  },
+  "f_pay_this": {
+    "en": "Pay this → no interest",
+    "bn": "এটা দিন → সুদ নেই"
+  },
+  "f_trap": {
+    "en": "Trap → interest starts",
+    "bn": "ফাঁদ → সুদ শুরু"
+  },
+  "f_bank": {
+    "en": "Free money in your bank",
+    "bn": "ব্যাংকে মুক্ত টাকা"
+  },
+  "f_card": {
+    "en": "Spend on card",
+    "bn": "কার্ডে খরচ"
+  },
+  "f_same": {
+    "en": "Same amount",
+    "bn": "সমান টাকা"
+  },
+  "f_up_to": {
+    "en": "up to {x}",
+    "bn": "{x} পর্যন্ত"
+  },
+  "f_door_atm": {
+    "en": "Cash from ATM",
+    "bn": "ATM থেকে টাকা তোলা"
+  },
+  "f_door_emi": {
+    "en": "Installments with interest",
+    "bn": "সুদসহ কিস্তি"
+  },
+  "f_door_move": {
+    "en": "Moving debt to a new card",
+    "bn": "ঋণ নতুন কার্ডে সরানো"
+  },
+  "f_door_min": {
+    "en": "Paying only the minimum",
+    "bn": "শুধু সর্বনিম্ন পরিশোধ"
+  },
+  "f_door_note": {
+    "en": "Interest starts",
+    "bn": "সুদ শুরু"
+  },
+  "f_jar_1": {
+    "en": "Step 1: 2 weeks of home costs",
+    "bn": "ধাপ ১: ২ সপ্তাহের খরচ"
+  },
+  "f_jar_2": {
+    "en": "Step 2: 1 month",
+    "bn": "ধাপ ২: ১ মাস"
+  },
+  "f_jar_3": {
+    "en": "Step 3: 3 months",
+    "bn": "ধাপ ৩: ৩ মাস"
+  },
+  "f_income": {
+    "en": "Your income arrives",
+    "bn": "আপনার আয় আসে"
+  },
+  "f_income_v": {
+    "en": "5th? 12th? 20th? It changes",
+    "bn": "৫? ১২? ২০ তারিখ? বদলায়"
+  },
+  "f_due_fixed": {
+    "en": "Card's last day to pay",
+    "bn": "কার্ডের বিল দেওয়ার শেষ দিন"
+  },
+  "f_due_fixed_v": {
+    "en": "Fixed: the 25th every month",
+    "bn": "প্রতি মাসে নির্দিষ্ট ২৫ তারিখ"
+  },
+  "f_before": {
+    "en": "Before",
+    "bn": "আগে"
+  },
+  "f_after": {
+    "en": "After the bank's message",
+    "bn": "ব্যাংকের মেসেজের পরে"
+  },
+  "f_same_salary": {
+    "en": "Your salary: the same",
+    "bn": "আপনার বেতন: একই"
+  },
+  "f_machine": {
+    "en": "Card machine in Dubai",
+    "bn": "দুবাইয়ের কার্ড মেশিন"
+  },
+  "f_machine_q": {
+    "en": "Pay in which currency?",
+    "bn": "কোন মুদ্রায় দেবেন?"
+  },
+  "f_local": {
+    "en": "Local money: choose this",
+    "bn": "স্থানীয় মুদ্রা: এটা বাছুন"
+  },
+  "f_taka": {
+    "en": "Taka: usually costs more",
+    "bn": "টাকা: সাধারণত বেশি খরচ"
+  },
+  "f_points": {
+    "en": "Points you earn on ৳10,000",
+    "bn": "৳১০,০০০ খরচে পয়েন্ট"
+  },
+  "f_interest_year": {
+    "en": "Interest if ৳10,000 stays unpaid for a year",
+    "bn": "৳১০,০০০ এক বছর বাকি থাকলে সুদ"
+  },
+  "f_month_n": {
+    "en": "Month {n}",
+    "bn": "মাস {n}"
+  },
+  "f_free_debt": {
+    "en": "Free!",
+    "bn": "মুক্ত!"
+  },
+  "f_opt_debit": {
+    "en": "Spends your own money from the bank",
+    "bn": "ব্যাংকে থাকা নিজের টাকা খরচ করে"
+  },
+  "f_opt_prepaid": {
+    "en": "Load money first, then spend",
+    "bn": "আগে টাকা ভরুন, তারপর খরচ"
+  },
+  "f_opt_islamic": {
+    "en": "Islamic bank card",
+    "bn": "ইসলামী ব্যাংকের কার্ড"
+  },
+  "f_opt_islamic_d": {
+    "en": "Fixed fee instead of interest. Check with a scholar",
+    "bn": "সুদের বদলে নির্দিষ্ট ফি। আলেমের সাথে মিলিয়ে নিন"
+  },
+  "f_no_interest": {
+    "en": "No interest",
+    "bn": "সুদ নেই"
+  },
+  "f_save_month": {
+    "en": "Save {x} each month",
+    "bn": "প্রতি মাসে {x} জমান"
+  },
+  "f_buy_cash": {
+    "en": "Buy with your own money: no installments, no interest",
+    "bn": "নিজের টাকায় কিনুন: কিস্তি নেই, সুদ নেই"
+  },
+  "left_n": {
+    "en": "{n} lessons still to do",
+    "bn": "আরও {n}টি পাঠ বাকি"
+  },
+  "left_1": {
+    "en": "1 lesson still to do",
+    "bn": "আরও ১টি পাঠ বাকি"
+  },
+  "map_done": {
+    "en": "All lessons finished",
+    "bn": "সব পাঠ শেষ"
+  },
+  "rules_title": {
+    "en": "My rules",
+    "bn": "আমার নিয়ম"
+  },
+  "rules_desc": {
+    "en": "Tick the rules you promise to keep. You can print this page or take a screenshot to keep it with you.",
+    "bn": "যে নিয়মগুলো মেনে চলবেন, সেগুলোতে টিক দিন। চাইলে পাতাটি প্রিন্ট করুন বা স্ক্রিনশট নিয়ে রাখুন।"
+  },
+  "verdict_lbl": {
+    "en": "Our honest answer for you",
+    "bn": "আপনার জন্য আমাদের সৎ উত্তর"
+  },
+  "next_step": {
+    "en": "My next step: {x}",
+    "bn": "আমার পরের ধাপ: {x}"
+  },
+  "finish_map": {
+    "en": "Finish my lessons",
+    "bn": "পাঠগুলো শেষ করি"
+  },
+  "print": {
+    "en": "Print my rules",
+    "bn": "নিয়মগুলো প্রিন্ট করুন"
+  },
+  "review": {
+    "en": "Review a lesson",
+    "bn": "কোনো পাঠ আবার দেখুন"
+  },
+  "walked_on": {
+    "en": "Finished on {d}",
+    "bn": "শেষ করেছেন {d}"
+  },
+  "f_opt_debit_t": {
+    "en": "Debit card",
+    "bn": "ডেবিট কার্ড"
+  },
+  "f_opt_prepaid_t": {
+    "en": "Prepaid card",
+    "bn": "প্রিপেইড কার্ড"
+  }
+}

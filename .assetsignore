@@ -1,0 +1,10 @@
+.git
+.gitignore
+.assetsignore
+.wrangler
+.playwright-mcp
+node_modules
+wrangler.jsonc
+README.md
+LICENSE
+.DS_Store

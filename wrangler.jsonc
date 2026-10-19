@@ -1,0 +1,9 @@
+{
+  // Static site served by Cloudflare Workers static assets. Deploy: npx wrangler@4 deploy
+  "name": "credit-card-abc",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "single-page-application"
+  }
+}

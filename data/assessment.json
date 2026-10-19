@@ -1,0 +1,735 @@
+{
+  "version": 3,
+  "intro": {
+    "kicker": {
+      "en": "Step 1 of 2 · About you",
+      "bn": "ধাপ ১/২ · আপনার সম্পর্কে"
+    },
+    "title": {
+      "en": "First, 9 easy questions.",
+      "bn": "শুরুতে ৯টি সহজ প্রশ্ন।"
+    },
+    "body": {
+      "en": "There are no right or wrong answers. We don't ask your name, salary or bank. Your answers only help us pick the lessons you need, and they stay on this device.",
+      "bn": "এখানে ঠিক বা ভুল উত্তর নেই। আপনার নাম, বেতন বা ব্যাংক জানতে চাই না। উত্তরগুলো শুধু আপনার দরকারি পাঠ বেছে নিতে সাহায্য করবে, আর এগুলো এই ডিভাইসেই থাকবে।"
+    },
+    "time": {
+      "en": "Takes about 2 minutes",
+      "bn": "সময় লাগবে প্রায় ২ মিনিট"
+    }
+  },
+  "traits": {
+    "buffer": {
+      "max": 4
+    },
+    "rhythm": {
+      "max": 3
+    },
+    "restraint": {
+      "max": 8
+    },
+    "reach": {
+      "max": 9
+    }
+  },
+  "questions": [
+    {
+      "id": "cushion",
+      "q": {
+        "en": "If your income stopped today, how long could you run your home with the money you have saved?",
+        "bn": "আজ যদি আপনার আয় বন্ধ হয়ে যায়, জমানো টাকা দিয়ে কতদিন সংসার চালাতে পারবেন?"
+      },
+      "help": {
+        "en": "Count only your own savings, not loans.",
+        "bn": "শুধু নিজের জমানো টাকা ধরুন, ধার নয়।"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Less than 1 month",
+            "bn": "১ মাসের কম"
+          },
+          "add": {
+            "buffer": 0
+          }
+        },
+        {
+          "t": {
+            "en": "1 to 3 months",
+            "bn": "১ থেকে ৩ মাস"
+          },
+          "add": {
+            "buffer": 1
+          }
+        },
+        {
+          "t": {
+            "en": "3 to 6 months",
+            "bn": "৩ থেকে ৬ মাস"
+          },
+          "add": {
+            "buffer": 2
+          }
+        },
+        {
+          "t": {
+            "en": "More than 6 months",
+            "bn": "৬ মাসের বেশি"
+          },
+          "add": {
+            "buffer": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "q": {
+        "en": "How does your income come?",
+        "bn": "আপনার আয় কীভাবে আসে?"
+      },
+      "help": {
+        "en": "We want to know if your money comes on a fixed date.",
+        "bn": "আপনার টাকা নির্দিষ্ট তারিখে আসে কি না, তা জানতে চাই।"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Salary, on the same date every month",
+            "bn": "প্রতি মাসে একই তারিখে বেতন"
+          },
+          "add": {
+            "rhythm": 3
+          }
+        },
+        {
+          "t": {
+            "en": "Salary, but sometimes it's late",
+            "bn": "বেতন, তবে মাঝে মাঝে দেরি হয়"
+          },
+          "add": {
+            "rhythm": 2
+          }
+        },
+        {
+          "t": {
+            "en": "Business or freelance: different every month",
+            "bn": "ব্যবসা বা ফ্রিল্যান্স: প্রতি মাসে আলাদা"
+          },
+          "add": {
+            "rhythm": 1
+          },
+          "flags": [
+            "variable_income"
+          ]
+        },
+        {
+          "t": {
+            "en": "Mostly family or someone else gives it",
+            "bn": "বেশিরভাগ পরিবার বা অন্য কেউ দেন"
+          },
+          "add": {
+            "rhythm": 0
+          },
+          "flags": [
+            "dependent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lastweek",
+      "q": {
+        "en": "How is the last week of the month for you, usually?",
+        "bn": "মাসের শেষ সপ্তাহটা সাধারণত কেমন যায়?"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Normal. The money is enough",
+            "bn": "স্বাভাবিক, টাকায় কুলিয়ে যায়"
+          },
+          "add": {
+            "buffer": 1
+          }
+        },
+        {
+          "t": {
+            "en": "A bit tight, but I manage",
+            "bn": "একটু টানাটানি, তবে সামলে নিই"
+          },
+          "add": {
+            "restraint": 1
+          }
+        },
+        {
+          "t": {
+            "en": "Sometimes I borrow or pay a bill late",
+            "bn": "মাঝে মাঝে ধার করি বা বিল দেরিতে দিই"
+          },
+          "flags": [
+            "month_end_gap"
+          ]
+        },
+        {
+          "t": {
+            "en": "I don't keep track",
+            "bn": "হিসাব রাখি না"
+          },
+          "flags": [
+            "untracked"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "want",
+      "q": {
+        "en": "You see something you really like. It costs about one week of your income. What do you usually do?",
+        "bn": "খুব পছন্দের একটা জিনিস দেখলেন। দাম প্রায় আপনার এক সপ্তাহের আয়ের সমান। সাধারণত কী করেন?"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Wait a few days, then decide",
+            "bn": "কয়েকদিন অপেক্ষা করে তারপর ঠিক করি"
+          },
+          "add": {
+            "restraint": 3
+          }
+        },
+        {
+          "t": {
+            "en": "Buy it only if I have the cash now",
+            "bn": "হাতে টাকা থাকলে তবেই কিনি"
+          },
+          "add": {
+            "restraint": 2
+          }
+        },
+        {
+          "t": {
+            "en": "Buy it in monthly installments",
+            "bn": "মাসিক কিস্তিতে কিনি"
+          },
+          "add": {
+            "restraint": 1
+          },
+          "flags": [
+            "emi_minded"
+          ]
+        },
+        {
+          "t": {
+            "en": "Buy it now, think later",
+            "bn": "এখনই কিনি, পরে ভাবি"
+          },
+          "add": {
+            "restraint": 0
+          },
+          "flags": [
+            "impulsive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "use",
+      "multi": true,
+      "q": {
+        "en": "If you had a credit card, what would you use it for?",
+        "bn": "ক্রেডিট কার্ড থাকলে কী কী কাজে ব্যবহার করতেন?"
+      },
+      "help": {
+        "en": "You can choose more than one.",
+        "bn": "একাধিক বাছাই করতে পারেন।"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Online shopping and apps (Netflix, Google, etc.)",
+            "bn": "অনলাইন কেনাকাটা ও অ্যাপ (Netflix, Google ইত্যাদি)"
+          },
+          "add": {
+            "reach": 1
+          },
+          "flags": [
+            "online"
+          ]
+        },
+        {
+          "t": {
+            "en": "Travel: air tickets and hotels",
+            "bn": "ভ্রমণ: বিমান টিকিট ও হোটেল"
+          },
+          "add": {
+            "reach": 3
+          },
+          "flags": [
+            "travels"
+          ]
+        },
+        {
+          "t": {
+            "en": "Emergencies",
+            "bn": "হঠাৎ বিপদে"
+          },
+          "flags": [
+            "emergency_use"
+          ]
+        },
+        {
+          "t": {
+            "en": "Daily shopping, to get points or cashback",
+            "bn": "প্রতিদিনের কেনাকাটা, পয়েন্ট বা ক্যাশব্যাক পেতে"
+          },
+          "add": {
+            "reach": 2
+          },
+          "flags": [
+            "rewards"
+          ]
+        },
+        {
+          "t": {
+            "en": "Big items like a phone or furniture",
+            "bn": "বড় জিনিস, যেমন ফোন বা আসবাব"
+          },
+          "add": {
+            "reach": 1
+          },
+          "flags": [
+            "big_purchase"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "q": {
+        "en": "How often do you go abroad?",
+        "bn": "আপনি কত ঘনঘন বিদেশে যান?"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Not yet",
+            "bn": "এখনো যাইনি"
+          },
+          "add": {
+            "reach": 0
+          }
+        },
+        {
+          "t": {
+            "en": "Once in a few years",
+            "bn": "কয়েক বছরে একবার"
+          },
+          "add": {
+            "reach": 1
+          }
+        },
+        {
+          "t": {
+            "en": "About once a year",
+            "bn": "বছরে একবারের মতো"
+          },
+          "add": {
+            "reach": 2
+          },
+          "flags": [
+            "travels"
+          ]
+        },
+        {
+          "t": {
+            "en": "Many times a year",
+            "bn": "বছরে কয়েকবার"
+          },
+          "add": {
+            "reach": 3
+          },
+          "flags": [
+            "travels",
+            "frequent_traveler"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "now",
+      "q": {
+        "en": "Do you have a credit card or any loan right now?",
+        "bn": "এখন কি আপনার কোনো ক্রেডিট কার্ড বা ঋণ আছে?"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "No. This would be my first card",
+            "bn": "না, এটাই হবে প্রথম কার্ড"
+          },
+          "flags": [
+            "first_card"
+          ]
+        },
+        {
+          "t": {
+            "en": "Yes, a card, and I pay the full bill every month",
+            "bn": "হ্যাঁ, কার্ড আছে, প্রতি মাসে পুরো বিল দিই"
+          },
+          "add": {
+            "restraint": 1
+          },
+          "flags": [
+            "has_card"
+          ]
+        },
+        {
+          "t": {
+            "en": "Yes, a card, and some of the bill stays unpaid each month",
+            "bn": "হ্যাঁ, কার্ড আছে, প্রতি মাসে কিছু বিল বাকি থাকে"
+          },
+          "flags": [
+            "has_card",
+            "has_debt"
+          ]
+        },
+        {
+          "t": {
+            "en": "No card, but I'm paying other loans or installments",
+            "bn": "কার্ড নেই, তবে অন্য ঋণ বা কিস্তি দিচ্ছি"
+          },
+          "flags": [
+            "has_emi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limit",
+      "q": {
+        "en": "A bank says: \"With this card you can spend up to 3 times your monthly income.\" How does that feel?",
+        "bn": "ব্যাংক বলল: \"এই কার্ডে আপনি মাসিক আয়ের ৩ গুণ পর্যন্ত খরচ করতে পারবেন।\" আপনার কেমন লাগে?"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "Like extra money I can use",
+            "bn": "যেন বাড়তি টাকা পেলাম, খরচ করা যাবে"
+          },
+          "add": {
+            "restraint": 0
+          },
+          "flags": [
+            "limit_as_income"
+          ]
+        },
+        {
+          "t": {
+            "en": "Like a backup for emergencies",
+            "bn": "যেন বিপদের সময়ের ভরসা"
+          },
+          "add": {
+            "restraint": 1
+          },
+          "flags": [
+            "emergency_use"
+          ]
+        },
+        {
+          "t": {
+            "en": "It's the bank's money. I'll only spend what I have",
+            "bn": "এটা ব্যাংকের টাকা, আমি শুধু নিজের টাকাই খরচ করব"
+          },
+          "add": {
+            "restraint": 3
+          }
+        },
+        {
+          "t": {
+            "en": "A bit scary",
+            "bn": "একটু ভয় লাগে"
+          },
+          "add": {
+            "restraint": 2
+          },
+          "flags": [
+            "cautious"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "riba",
+      "q": {
+        "en": "How do you feel about paying interest (riba)?",
+        "bn": "সুদ (রিবা) দেওয়ার ব্যাপারে আপনার মনোভাব কী?"
+      },
+      "help": {
+        "en": "Interest is extra money the bank charges when you don't pay the full bill on time. In Islam it is called riba.",
+        "bn": "সময়মতো পুরো বিল না দিলে ব্যাংক যে বাড়তি টাকা নেয়, সেটাই সুদ। ইসলামে একে রিবা বলে।"
+      },
+      "options": [
+        {
+          "t": {
+            "en": "I want to avoid it completely",
+            "bn": "পুরোপুরি এড়িয়ে চলতে চাই"
+          },
+          "flags": [
+            "riba_avoid"
+          ]
+        },
+        {
+          "t": {
+            "en": "I want to avoid it, but I don't know how",
+            "bn": "এড়াতে চাই, কিন্তু কীভাবে জানি না"
+          },
+          "flags": [
+            "riba_curious"
+          ]
+        },
+        {
+          "t": {
+            "en": "I never thought about it",
+            "bn": "কখনো ভেবে দেখিনি"
+          },
+          "flags": [
+            "riba_unaware"
+          ]
+        }
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "id": "rebuilder",
+      "when": {
+        "any": [
+          {
+            "flag": "has_debt"
+          },
+          {
+            "flag": "has_emi"
+          }
+        ]
+      },
+      "title": {
+        "en": "First, let's clear what you owe.",
+        "bn": "আগে চলুন বাকি টাকা শোধ করি।"
+      },
+      "line": {
+        "en": "You're paying something off right now. That's very common. After the basics, a lesson shows the fastest way out, then the rules to never get stuck again.",
+        "bn": "আপনি এখন কিছু শোধ করছেন। এটা খুবই সাধারণ ব্যাপার। মূল পাঠগুলোর পরে একটি পাঠে থাকবে দ্রুত বের হওয়ার উপায়, তারপর এমন নিয়ম, যাতে আর কখনো আটকে না যান।"
+      }
+    },
+    {
+      "id": "groundbuilder",
+      "when": {
+        "any": [
+          {
+            "trait": "buffer",
+            "lte": 1
+          },
+          {
+            "flag": "month_end_gap"
+          }
+        ]
+      },
+      "title": {
+        "en": "First, a little savings. Then a card.",
+        "bn": "আগে একটু জমা, তারপর কার্ড।"
+      },
+      "line": {
+        "en": "A card is safest when you have some savings behind it. Your lessons show how a card works, how to build savings, and how to never pay interest.",
+        "bn": "পেছনে কিছু জমা থাকলে কার্ড সবচেয়ে নিরাপদ। আপনার পাঠে থাকবে কার্ড কীভাবে কাজ করে, কীভাবে জমাবেন, আর কীভাবে কখনো সুদ দেবেন না।"
+      }
+    },
+    {
+      "id": "voyager",
+      "when": {
+        "all": [
+          {
+            "flag": "travels"
+          },
+          {
+            "trait": "buffer",
+            "gte": 2
+          }
+        ]
+      },
+      "title": {
+        "en": "A card can help you. Let's learn the safe way.",
+        "bn": "কার্ড আপনার কাজে আসবে। চলুন নিরাপদ নিয়ম শিখি।"
+      },
+      "line": {
+        "en": "You travel and have some savings, so a card is useful for you. Your lessons cover the main rules and how to use a card abroad without extra costs.",
+        "bn": "আপনি ভ্রমণ করেন আর কিছু জমাও আছে, তাই কার্ড আপনার কাজে লাগবে। আপনার পাঠে থাকবে মূল নিয়ম আর বিদেশে বাড়তি খরচ ছাড়া কার্ড ব্যবহারের উপায়।"
+      }
+    },
+    {
+      "id": "steward",
+      "when": {
+        "all": [
+          {
+            "trait": "buffer",
+            "gte": 2
+          },
+          {
+            "trait": "restraint",
+            "gte": 4
+          }
+        ]
+      },
+      "title": {
+        "en": "You're careful with money. Let's make it a habit.",
+        "bn": "আপনি টাকার ব্যাপারে সতর্ক। চলুন এটাকে অভ্যাস বানাই।"
+      },
+      "line": {
+        "en": "You already handle money well. These lessons turn that into a few simple rules, so a card never costs you a single taka in interest.",
+        "bn": "আপনি এমনিতেই ভালোভাবে টাকা সামলান। এই পাঠগুলো সেটাকে কয়েকটা সহজ নিয়মে বাঁধবে, যাতে কার্ডে কখনো এক টাকাও সুদ না লাগে।"
+      }
+    },
+    {
+      "id": "explorer",
+      "when": {
+        "all": []
+      },
+      "title": {
+        "en": "Let's learn how a card really works.",
+        "bn": "চলুন জানি কার্ড আসলে কীভাবে কাজ করে।"
+      },
+      "line": {
+        "en": "Your lessons explain the card step by step, with simple examples, so you always know exactly where interest begins.",
+        "bn": "আপনার পাঠে সহজ উদাহরণ দিয়ে ধাপে ধাপে কার্ড বোঝানো হবে, যাতে সবসময় জানেন ঠিক কোথা থেকে সুদ শুরু হয়।"
+      }
+    }
+  ],
+  "insights": [
+    {
+      "when": {
+        "any": [
+          {
+            "flag": "has_debt"
+          },
+          {
+            "flag": "has_emi"
+          }
+        ]
+      },
+      "text": {
+        "en": "You're paying off a card or loan now. We added a lesson on getting out of it quickly.",
+        "bn": "আপনি এখন কার্ড বা ঋণ শোধ করছেন। দ্রুত বের হওয়ার উপায় নিয়ে একটা পাঠ যোগ করেছি।"
+      }
+    },
+    {
+      "when": {
+        "trait": "buffer",
+        "lte": 0
+      },
+      "text": {
+        "en": "Your savings would last less than a month. We added a lesson on building savings first.",
+        "bn": "আপনার জমা এক মাসও চলবে না। তাই আগে জমানো নিয়ে একটা পাঠ যোগ করেছি।"
+      }
+    },
+    {
+      "when": {
+        "flag": "month_end_gap"
+      },
+      "text": {
+        "en": "The end of the month is sometimes hard. Used wrongly, a card makes this worse. We'll show the safe way.",
+        "bn": "মাসের শেষটা মাঝে মাঝে কঠিন যায়। ভুলভাবে ব্যবহার করলে কার্ড এটাকে আরও খারাপ করে। আমরা নিরাপদ উপায় দেখাব।"
+      }
+    },
+    {
+      "when": {
+        "any": [
+          {
+            "flag": "variable_income"
+          },
+          {
+            "flag": "dependent"
+          }
+        ]
+      },
+      "text": {
+        "en": "Your income doesn't come on a fixed date. We'll show how to stay safe with that.",
+        "bn": "আপনার আয় নির্দিষ্ট তারিখে আসে না। এ অবস্থায় কীভাবে নিরাপদ থাকবেন, তা দেখাব।"
+      }
+    },
+    {
+      "when": {
+        "any": [
+          {
+            "flag": "impulsive"
+          },
+          {
+            "flag": "limit_as_income"
+          }
+        ]
+      },
+      "text": {
+        "en": "A card makes buying very easy. We'll learn a few simple brakes.",
+        "bn": "কার্ড থাকলে কেনা খুব সহজ হয়ে যায়। আমরা কয়েকটা সহজ ব্রেক শিখব।"
+      }
+    },
+    {
+      "when": {
+        "any": [
+          {
+            "flag": "emi_minded"
+          },
+          {
+            "flag": "big_purchase"
+          }
+        ]
+      },
+      "text": {
+        "en": "You use installments or plan big buys. We'll show the hidden cost, and a better way.",
+        "bn": "আপনি কিস্তিতে কেনেন বা বড় কেনাকাটার কথা ভাবছেন। লুকানো খরচ আর আরও ভালো উপায় দেখাব।"
+      }
+    },
+    {
+      "when": {
+        "flag": "travels"
+      },
+      "text": {
+        "en": "You travel. We added the rules for using a card abroad.",
+        "bn": "আপনি ভ্রমণ করেন। বিদেশে কার্ড ব্যবহারের নিয়ম যোগ করেছি।"
+      }
+    },
+    {
+      "when": {
+        "flag": "rewards"
+      },
+      "text": {
+        "en": "You like points and cashback. We'll show when they help, and when they trick you.",
+        "bn": "আপনি পয়েন্ট আর ক্যাশব্যাক পছন্দ করেন। কখন এগুলো লাভ, কখন ফাঁদ, তা দেখাব।"
+      }
+    },
+    {
+      "when": {
+        "any": [
+          {
+            "flag": "riba_avoid"
+          },
+          {
+            "flag": "riba_curious"
+          }
+        ]
+      },
+      "text": {
+        "en": "You want to avoid interest. Good news: if you follow one simple rule, a card won't charge you interest.",
+        "bn": "আপনি সুদ এড়াতে চান। সুখবর: একটা সহজ নিয়ম মানলে কার্ডে আপনার কোনো সুদ লাগবে না।"
+      }
+    },
+    {
+      "when": {
+        "all": []
+      },
+      "text": {
+        "en": "Everyone starts with the basics: how a card works, and the one rule that keeps it interest-free.",
+        "bn": "সবাই শুরু করে মূল বিষয় দিয়ে: কার্ড কীভাবে কাজ করে, আর যে একটি নিয়মে কার্ডে কোনো সুদ লাগে না।"
+      }
+    }
+  ]
+}

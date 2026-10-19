@@ -1,0 +1,1662 @@
+{
+  "version": 3,
+  "settings": {
+    "currency": "৳",
+    "apr": 0.25,
+    "minPct": 0.05,
+    "minFloor": 500,
+    "lateFee": 600,
+    "cycleDays": 30,
+    "graceDays": 20
+  },
+  "regions": [
+    {
+      "id": "ground",
+      "title": {
+        "en": "The basics",
+        "bn": "মূল বিষয়"
+      },
+      "sub": {
+        "en": "How a credit card works",
+        "bn": "ক্রেডিট কার্ড কীভাবে কাজ করে"
+      }
+    },
+    {
+      "id": "line",
+      "title": {
+        "en": "Stay free of interest",
+        "bn": "সুদ থেকে দূরে থাকুন"
+      },
+      "sub": {
+        "en": "Where the bank starts charging extra",
+        "bn": "কোথায় ব্যাংক বাড়তি টাকা নিতে শুরু করে"
+      }
+    },
+    {
+      "id": "path",
+      "title": {
+        "en": "Just for you",
+        "bn": "শুধু আপনার জন্য"
+      },
+      "sub": {
+        "en": "Picked from your answers",
+        "bn": "আপনার উত্তর থেকে বাছাই করা"
+      }
+    },
+    {
+      "id": "keep",
+      "title": {
+        "en": "Finish",
+        "bn": "শেষ ধাপ"
+      },
+      "sub": {
+        "en": "Other options and your rules",
+        "bn": "অন্য উপায় আর আপনার নিয়ম"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "promise",
+      "region": "ground",
+      "title": {
+        "en": "How a credit card works",
+        "bn": "ক্রেডিট কার্ড কীভাবে কাজ করে"
+      },
+      "minutes": 3,
+      "when": {
+        "all": []
+      },
+      "steps": [
+        {
+          "type": "story",
+          "figure": "flow",
+          "title": {
+            "en": "The bank pays now. You pay later.",
+            "bn": "ব্যাংক এখন দেয়, আপনি পরে দেন।"
+          },
+          "body": [
+            {
+              "en": "When you buy something with a credit card, the bank pays the shop for you.",
+              "bn": "ক্রেডিট কার্ডে কিছু কিনলে, দোকানকে টাকা দেয় ব্যাংক।"
+            },
+            {
+              "en": "Later, you must pay that money back to the bank. There is a fixed [[due]].",
+              "bn": "পরে সেই টাকা আপনাকে ব্যাংককে ফেরত দিতে হয়। এর একটা নির্দিষ্ট [[due]] আছে।"
+            },
+            {
+              "en": "Pay the [[total_due|full bill]] by that day and it costs you **nothing extra**. Pay late or pay less, and the bank adds [[interest]].",
+              "bn": "ওই দিনের মধ্যে [[total_due|পুরো বিল]] দিলে **এক টাকাও বাড়তি লাগে না**। দেরিতে বা কম দিলে ব্যাংক [[interest]] যোগ করে।"
+            },
+            {
+              "en": "Some cards also have a yearly fee. Ask about it before you sign.",
+              "bn": "কিছু কার্ডে বার্ষিক ফিও থাকে। নেওয়ার আগে জেনে নিন।"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "figure": "limitbars",
+          "title": {
+            "en": "Rafi's mistake",
+            "bn": "রাফির ভুল"
+          },
+          "body": [
+            {
+              "en": "Rafi earns ৳45,000 a month. His new card has a [[limit]] of ৳1,00,000.",
+              "bn": "রাফির মাসিক আয় ৳৪৫,০০০। তার নতুন কার্ডের [[limit]] ৳১,০০,০০০।"
+            },
+            {
+              "en": "He thought: \"Now I have ৳1,00,000 to spend!\" He bought a phone and clothes, and ate out a lot.",
+              "bn": "সে ভাবল, \"এখন আমার হাতে এক লাখ টাকা!\" ফোন কিনল, জামাকাপড় কিনল, বারবার বাইরে খেল।"
+            },
+            {
+              "en": "But that ৳1,00,000 was the **bank's money**, not his. When the bill came, he could not pay it all.",
+              "bn": "কিন্তু ওই এক লাখ টাকা ছিল **ব্যাংকের**, তার নিজের না। বিল আসার পর সে পুরো টাকা দিতে পারল না।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "Rafi earns ৳45,000. After rent, food and bills, ৳12,000 is left. His card limit is ৳1,00,000. How much should he spend on the card this month?",
+            "bn": "রাফির আয় ৳৪৫,০০০। ভাড়া, খাবার আর বিল দেওয়ার পর থাকে ৳১২,০০০। কার্ডের লিমিট ৳১,০০,০০০। এ মাসে কার্ডে তার কত খরচ করা উচিত?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "৳1,00,000, the full limit",
+                "bn": "৳১,০০,০০০, পুরো লিমিট"
+              },
+              "why": {
+                "en": "The limit is the bank's money. He has to pay it all back in about 50 days, and he can't.",
+                "bn": "লিমিট হলো ব্যাংকের টাকা। প্রায় ৫০ দিনের মধ্যে সব ফেরত দিতে হবে, যা সে পারবে না।"
+              }
+            },
+            {
+              "t": {
+                "en": "৳45,000, his full salary",
+                "bn": "৳৪৫,০০০, পুরো বেতন"
+              },
+              "why": {
+                "en": "His salary is already needed for rent, food and bills.",
+                "bn": "তার বেতন তো ভাড়া, খাবার আর বিলেই লাগবে।"
+              }
+            },
+            {
+              "t": {
+                "en": "Up to ৳12,000, the money that is really free",
+                "bn": "৳১২,০০০ পর্যন্ত, যে টাকা সত্যিই হাতে আছে"
+              },
+              "correct": true,
+              "why": {
+                "en": "Right. Spend on the card only money you already have and don't need for anything else.",
+                "bn": "ঠিক। কার্ডে শুধু সেই টাকা খরচ করুন, যা আগে থেকেই আছে আর অন্য কোনো কাজে লাগবে না।"
+              }
+            },
+            {
+              "t": {
+                "en": "৳50,000, half the limit",
+                "bn": "৳৫০,০০০, লিমিটের অর্ধেক"
+              },
+              "why": {
+                "en": "That's more than his whole salary. Half of the bank's money is still the bank's money.",
+                "bn": "এটা তো তার পুরো বেতনের চেয়েও বেশি। ব্যাংকের টাকার অর্ধেকও ব্যাংকেরই টাকা।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "The limit is the bank's money. I spend only my own money.",
+            "bn": "লিমিট হলো ব্যাংকের টাকা। আমি খরচ করব শুধু নিজের টাকা।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cycle",
+      "region": "ground",
+      "title": {
+        "en": "The two important dates",
+        "bn": "দুটি জরুরি তারিখ"
+      },
+      "minutes": 4,
+      "when": {
+        "all": []
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "calendar",
+          "title": {
+            "en": "Every card runs on two dates",
+            "bn": "প্রতিটি কার্ড চলে দুটি তারিখে"
+          },
+          "points": [
+            {
+              "en": "**[[bill_day]]:** once a month, the bank adds up everything you bought and makes one bill.",
+              "bn": "**[[bill_day]]:** মাসে একবার ব্যাংক আপনার সব কেনাকাটা যোগ করে একটা বিল বানায়।"
+            },
+            {
+              "en": "**[[due]]:** about 20 days later. You must pay the full bill by this day.",
+              "bn": "**[[due]]:** এর প্রায় ২০ দিন পর। এই দিনের মধ্যে পুরো বিল দিতে হবে।"
+            },
+            {
+              "en": "Until that day you pay no interest. These are your [[grace|free days]].",
+              "bn": "ওই দিন পর্যন্ত কোনো সুদ নেই। এগুলোই আপনার [[grace|সুদ-ছাড়া দিন]]।"
+            },
+            {
+              "en": "Buy just **after** the bill day and you get up to 50 days to pay. Buy just **before** it and you get only about 20.",
+              "bn": "বিল তৈরির ঠিক **পরে** কিনলে শোধের জন্য ৫০ দিন পর্যন্ত পাবেন। ঠিক **আগে** কিনলে পাবেন মাত্র ২০ দিনের মতো।"
+            }
+          ]
+        },
+        {
+          "type": "sim",
+          "sim": "cycle"
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "Your bill is made on the 5th of every month. The last day to pay is the 25th. You buy something on the 6th. When do you have to pay for it?",
+            "bn": "প্রতি মাসের ৫ তারিখে আপনার বিল তৈরি হয়। বিল দেওয়ার শেষ দিন ২৫ তারিখ। আপনি ৬ তারিখে কিছু কিনলেন। এর টাকা কবে দিতে হবে?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "By the 25th of this month",
+                "bn": "এই মাসের ২৫ তারিখের মধ্যে"
+              },
+              "why": {
+                "en": "No. Anything bought after the 5th goes into next month's bill.",
+                "bn": "না। ৫ তারিখের পরে কেনা জিনিস যায় পরের মাসের বিলে।"
+              }
+            },
+            {
+              "t": {
+                "en": "By the 25th of next month (about 49 days later)",
+                "bn": "পরের মাসের ২৫ তারিখের মধ্যে (প্রায় ৪৯ দিন পর)"
+              },
+              "correct": true,
+              "why": {
+                "en": "Right. It goes into next month's bill, so you get the most time.",
+                "bn": "ঠিক। এটা পরের মাসের বিলে যায়, তাই সবচেয়ে বেশি সময় পাবেন।"
+              }
+            },
+            {
+              "t": {
+                "en": "Right away",
+                "bn": "সঙ্গে সঙ্গে"
+              },
+              "why": {
+                "en": "No. Shopping goes on your bill. (ATM cash is different: interest starts that same day.)",
+                "bn": "না। কেনাকাটা বিলে যোগ হয়। (ATM-এর টাকা আলাদা: সেদিন থেকেই সুদ শুরু।)"
+              }
+            },
+            {
+              "t": {
+                "en": "Exactly 30 days later",
+                "bn": "ঠিক ৩০ দিন পর"
+              },
+              "why": {
+                "en": "A card doesn't count days for each item. Everything follows the two dates.",
+                "bn": "কার্ড প্রতিটি জিনিসের জন্য আলাদা দিন গোনে না। সবকিছু চলে ওই দুটি তারিখ ধরে।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "I remember two dates: the day my bill is made, and the last day to pay it.",
+            "bn": "আমি দুটি তারিখ মনে রাখব: বিল তৈরির দিন আর বিল দেওয়ার শেষ দিন।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "riba-line",
+      "region": "line",
+      "title": {
+        "en": "Full bill, or interest",
+        "bn": "পুরো বিল, নয়তো সুদ"
+      },
+      "minutes": 5,
+      "when": {
+        "all": []
+      },
+      "steps": [
+        {
+          "type": "story",
+          "figure": "bill",
+          "title": {
+            "en": "Two amounts on every bill",
+            "bn": "প্রতিটি বিলে দুটি অঙ্ক"
+          },
+          "body": [
+            {
+              "en": "Every card bill shows two amounts: the [[total_due|full bill]], and a small [[min_due|minimum payment]].",
+              "bn": "প্রতিটি কার্ডের বিলে দুটি অঙ্ক থাকে: [[total_due|পুরো বিল]], আর ছোট একটা [[min_due|সর্বনিম্ন পরিশোধ]]।"
+            },
+            {
+              "en": "The small number looks easy and friendly.",
+              "bn": "ছোট অঙ্কটা দেখতে সহজ আর আরামদায়ক।"
+            },
+            {
+              "en": "But it's a **trap**. Pay only the minimum and your free days are gone: the bank adds [[interest]], often on the whole bill.",
+              "bn": "কিন্তু এটা একটা **ফাঁদ**। শুধু সর্বনিম্ন দিলে সুদ-ছাড়া সময় শেষ: ব্যাংক [[interest]] যোগ করে, প্রায়ই পুরো বিলের ওপর।"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "The one main rule",
+            "bn": "একটাই মূল নিয়ম"
+          },
+          "points": [
+            {
+              "en": "Pay the **full bill** by the [[due]] → **zero** interest.",
+              "bn": "[[due]]-এর মধ্যে **পুরো বিল** দিন → সুদ **শূন্য**।"
+            },
+            {
+              "en": "Pay even a little less → most banks add interest on the **whole** bill, counted from the day you bought.",
+              "bn": "একটু কম দিলেও → বেশিরভাগ ব্যাংক **পুরো** বিলের ওপর সুদ নেয়, কেনার দিন থেকে হিসাব করে।"
+            },
+            {
+              "en": "Card interest is about **20–25% a year**. This is riba, and Allah warns strongly against it (Surah Al-Baqarah 2:275–279).",
+              "bn": "কার্ডের সুদ বছরে প্রায় **২০–২৫%**। এটাই রিবা, যার ব্যাপারে আল্লাহ কঠোরভাবে সতর্ক করেছেন (সূরা আল-বাকারা ২:২৭৫–২৭৯)।"
+            }
+          ]
+        },
+        {
+          "type": "sim",
+          "sim": "minimum"
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "Your bill says: Full bill ৳50,000. Minimum payment ৳2,500. What should you pay to avoid interest completely?",
+            "bn": "আপনার বিলে লেখা: পুরো বিল ৳৫০,০০০। সর্বনিম্ন পরিশোধ ৳২,৫০০। সুদ পুরোপুরি এড়াতে কত দেবেন?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "৳2,500, the minimum",
+                "bn": "৳২,৫০০, সর্বনিম্নটা"
+              },
+              "why": {
+                "en": "This only avoids the late fine. Interest still comes, often on the whole bill.",
+                "bn": "এতে শুধু জরিমানা এড়ানো যায়। সুদ ঠিকই আসে, প্রায়ই পুরো বিলের ওপর।"
+              }
+            },
+            {
+              "t": {
+                "en": "৳25,000, half",
+                "bn": "৳২৫,০০০, অর্ধেক"
+              },
+              "why": {
+                "en": "Better than the minimum, but interest still comes.",
+                "bn": "সর্বনিম্নের চেয়ে ভালো, তবু সুদ আসে।"
+              }
+            },
+            {
+              "t": {
+                "en": "৳50,000, the full bill",
+                "bn": "৳৫০,০০০, পুরো বিল"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. Only the full bill, paid on time, keeps you free of interest.",
+                "bn": "হ্যাঁ। শুধু সময়মতো পুরো বিল দিলেই সুদ থেকে মুক্ত থাকবেন।"
+              }
+            },
+            {
+              "t": {
+                "en": "Any amount, as long as it's on time",
+                "bn": "যেকোনো অঙ্ক, সময়মতো দিলেই হলো"
+              },
+              "why": {
+                "en": "Paying on time avoids the fine. Only paying the **full** bill avoids interest.",
+                "bn": "সময়মতো দিলে জরিমানা এড়ানো যায়। সুদ এড়ায় শুধু **পুরো** বিল দিলে।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "A note on religion",
+            "bn": "ধর্মীয় একটি কথা"
+          },
+          "points": [
+            {
+              "en": "Scholars have different views on credit cards. Many say that even signing a card contract with an interest clause is wrong. Others allow it if there is a real need and you are sure you will always pay in full.",
+              "bn": "ক্রেডিট কার্ড নিয়ে আলেমদের মধ্যে ভিন্ন মত আছে। অনেকে বলেন, সুদের শর্তযুক্ত কার্ডের চুক্তিতে সই করাই ঠিক না। আবার অনেকে অনুমতি দেন, যদি সত্যিই দরকার হয় আর আপনি নিশ্চিত থাকেন যে সবসময় পুরো বিল দেবেন।"
+            },
+            {
+              "en": "We don't give a fatwa. Please ask a scholar you trust. Near the end, we also show cards that have no interest at all.",
+              "bn": "আমরা কোনো ফতোয়া দিই না। আপনার বিশ্বস্ত কোনো আলেমকে জিজ্ঞেস করুন। শেষের দিকে আমরা এমন কার্ডও দেখাব, যাতে কোনো সুদই নেই।"
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "I always pay the full bill. The minimum payment is a trap.",
+            "bn": "আমি সবসময় পুরো বিল দেব। সর্বনিম্ন পরিশোধ একটা ফাঁদ।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mirror",
+      "region": "line",
+      "title": {
+        "en": "The mirror rule",
+        "bn": "আয়নার নিয়ম"
+      },
+      "minutes": 4,
+      "when": {
+        "all": []
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "mirror",
+          "title": {
+            "en": "Your card is a mirror of your bank account",
+            "bn": "আপনার কার্ড হলো ব্যাংক অ্যাকাউন্টের আয়না"
+          },
+          "points": [
+            {
+              "en": "Before you use the card, the **same amount** must already be in your bank account.",
+              "bn": "কার্ড ব্যবহারের আগে, **সমান টাকা** আপনার ব্যাংক অ্যাকাউন্টে থাকতে হবে।"
+            },
+            {
+              "en": "And that money must be **free**, not needed for rent, school fees or food.",
+              "bn": "আর সেই টাকা হতে হবে **মুক্ত**, অর্থাৎ ভাড়া, স্কুলের বেতন বা খাবারের জন্য দরকার নেই।"
+            },
+            {
+              "en": "Simple trick: when you use the card, move the same amount to a separate account that day. When the bill comes, the money is ready.",
+              "bn": "সহজ কৌশল: কার্ডে যেদিন খরচ করবেন, সেদিনই সমান টাকা আলাদা একটা অ্যাকাউন্টে সরিয়ে রাখুন। বিল এলে টাকা তৈরি থাকবে।"
+            }
+          ]
+        },
+        {
+          "type": "sim",
+          "sim": "mirror"
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "You have ৳30,000 in your account. ৳18,000 of it is for next week's rent. You see a jacket for ৳15,000. What does the mirror rule say?",
+            "bn": "আপনার অ্যাকাউন্টে ৳৩০,০০০ আছে। এর মধ্যে ৳১৮,০০০ আগামী সপ্তাহের বাসা ভাড়া। ৳১৫,০০০-এর একটা জ্যাকেট দেখলেন। আয়নার নিয়ম কী বলে?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Buy it. The card gives me time",
+                "bn": "কিনে ফেলি, কার্ড তো সময় দেয়"
+              },
+              "why": {
+                "en": "Time is not money. Next month's salary already has next month's costs.",
+                "bn": "সময় মানে টাকা না। পরের মাসের বেতনের ওপর পরের মাসের খরচ আছে।"
+              }
+            },
+            {
+              "t": {
+                "en": "Not now. Only ৳12,000 is free",
+                "bn": "এখন না, মুক্ত টাকা মাত্র ৳১২,০০০"
+              },
+              "correct": true,
+              "why": {
+                "en": "Right. ৳30,000 − ৳18,000 = ৳12,000. The jacket has to wait.",
+                "bn": "ঠিক। ৳৩০,০০০ − ৳১৮,০০০ = ৳১২,০০০। জ্যাকেটকে অপেক্ষা করতে হবে।"
+              }
+            },
+            {
+              "t": {
+                "en": "Buy it in 3 installments",
+                "bn": "৩ কিস্তিতে কিনি"
+              },
+              "why": {
+                "en": "That spreads something you can't afford over 3 months, often with extra costs.",
+                "bn": "এতে সামর্থ্যের বাইরের জিনিস ৩ মাসে ছড়িয়ে যায়, প্রায়ই বাড়তি খরচসহ।"
+              }
+            },
+            {
+              "t": {
+                "en": "Buy it and pay rent late",
+                "bn": "কিনে ফেলি, ভাড়া দেরিতে দিই"
+              },
+              "why": {
+                "en": "Rent is a promise too, and a bigger one.",
+                "bn": "ভাড়া দেওয়াও একটা প্রতিশ্রুতি, আর সেটা আরও বড়।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "No money in my account means no card use.",
+            "bn": "অ্যাকাউন্টে টাকা নেই মানে কার্ড ব্যবহার নেই।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "traps",
+      "region": "line",
+      "title": {
+        "en": "Traps that look helpful",
+        "bn": "যে ফাঁদগুলো সুবিধা মনে হয়"
+      },
+      "minutes": 4,
+      "when": {
+        "all": []
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "doors",
+          "title": {
+            "en": "Four things to stay away from",
+            "bn": "চারটি জিনিস থেকে দূরে থাকুন"
+          },
+          "points": [
+            {
+              "en": "**Taking cash from an ATM** ([[cash_advance]]): a fee, plus interest from the same day. No free days at all.",
+              "bn": "**ATM থেকে টাকা তোলা** ([[cash_advance]]): ফি লাগে, আর সেদিন থেকেই সুদ। কোনো সুদ-ছাড়া দিন নেই।"
+            },
+            {
+              "en": "**[[emi|Installments]] with interest:** it's still interest, just cut into small pieces. Even \"0% installments\" often have a hidden fee, and one late payment can bring interest.",
+              "bn": "**সুদসহ [[emi|কিস্তি]]:** এটাও সুদ, শুধু ছোট ছোট ভাগে। \"০% কিস্তি\"-তেও প্রায়ই লুকানো ফি থাকে, আর একটা কিস্তি দেরি হলেই সুদ আসতে পারে।"
+            },
+            {
+              "en": "**Moving debt to another card:** the debt doesn't go away. It only moves.",
+              "bn": "**ঋণ অন্য কার্ডে সরানো:** ঋণ শেষ হয় না, শুধু জায়গা বদলায়।"
+            },
+            {
+              "en": "**Paying only the [[min_due|minimum]]:** the main door to interest.",
+              "bn": "**শুধু [[min_due|সর্বনিম্ন]] পরিশোধ:** সুদে ঢোকার প্রধান দরজা।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "You need ৳10,000 cash quickly. Your credit card can take money from an ATM. What does that really cost?",
+            "bn": "হঠাৎ ৳১০,০০০ নগদ দরকার। আপনার ক্রেডিট কার্ড দিয়ে ATM থেকে টাকা তোলা যায়। এর আসল খরচ কী?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Nothing, if I pay it back within 50 days",
+                "bn": "৫০ দিনের মধ্যে ফেরত দিলে কিছুই না"
+              },
+              "why": {
+                "en": "ATM cash has no free days. Interest starts the same day.",
+                "bn": "ATM-এর টাকায় সুদ-ছাড়া দিন নেই। সুদ শুরু হয় সেদিনই।"
+              }
+            },
+            {
+              "t": {
+                "en": "A fee, plus interest from that same day",
+                "bn": "ফি, আর সেদিন থেকেই সুদ"
+              },
+              "correct": true,
+              "why": {
+                "en": "Right. It's the most expensive way to use a card.",
+                "bn": "ঠিক। কার্ড ব্যবহারের এটাই সবচেয়ে দামি উপায়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Only the ATM fee",
+                "bn": "শুধু ATM ফি"
+              },
+              "why": {
+                "en": "The fee is only the first cost. Interest comes after.",
+                "bn": "ফি তো শুধু প্রথম খরচ। এরপর আসে সুদ।"
+              }
+            },
+            {
+              "t": {
+                "en": "It depends on the minimum payment",
+                "bn": "সর্বনিম্ন পরিশোধের ওপর নির্ভর করে"
+              },
+              "why": {
+                "en": "No. Whatever you pay later, ATM cash has a fee and interest from day one.",
+                "bn": "না। পরে যত টাকাই দিন, ATM-এর টাকায় ফি আর প্রথম দিন থেকেই সুদ।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "If something makes \"pay later\" easy, it usually makes me pay more.",
+            "bn": "যা \"পরে দেওয়া\"-কে সহজ করে, তা সাধারণত বেশি টাকা দেওয়ায়।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rebuild",
+      "region": "path",
+      "title": {
+        "en": "Getting out of debt",
+        "bn": "ঋণ থেকে বের হওয়া"
+      },
+      "minutes": 5,
+      "when": {
+        "any": [
+          {
+            "flag": "has_debt"
+          },
+          {
+            "flag": "has_emi"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "story",
+          "figure": "stairs",
+          "title": {
+            "en": "Nothing to be ashamed of",
+            "bn": "লজ্জার কিছু নেই"
+          },
+          "body": [
+            {
+              "en": "Many, many people have an unpaid card bill or loan. Card and loan rules are built in a way that makes this easy to fall into.",
+              "bn": "অনেক মানুষেরই কার্ডের বিল বা ঋণ বাকি থাকে। কার্ড আর ঋণের নিয়মই এমনভাবে বানানো, যাতে সহজে এতে আটকে যাওয়া যায়।"
+            },
+            {
+              "en": "What matters now is the **direction**: every month, the amount you owe should get **smaller**.",
+              "bn": "এখন জরুরি হলো **দিক**: প্রতি মাসে বাকি টাকা যেন **কমে**।"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "Five steps out",
+            "bn": "বের হওয়ার পাঁচটি ধাপ"
+          },
+          "points": [
+            {
+              "en": "**Stop using the card and stop taking new installments.** Don't close the card yet, just stop. Remove it from your phone and shopping apps.",
+              "bn": "**কার্ড ব্যবহার আর নতুন কিস্তি নেওয়া বন্ধ করুন।** কার্ড এখনই বাতিল না, শুধু ব্যবহার বন্ধ। ফোন আর শপিং অ্যাপ থেকে কার্ড মুছে দিন।"
+            },
+            {
+              "en": "**Write down every debt:** how much, and how much interest.",
+              "bn": "**সব ঋণ লিখে ফেলুন:** কত টাকা, আর কত সুদ।"
+            },
+            {
+              "en": "**Pay at least the minimum on every debt (to avoid late fines), and put every extra taka on the one with the highest interest.**",
+              "bn": "**জরিমানা এড়াতে প্রতিটি ঋণের অন্তত সর্বনিম্ন দিন, আর বাড়তি প্রতিটি টাকা দিন সবচেয়ে বেশি সুদের ঋণে।**"
+            },
+            {
+              "en": "**Find one big push:** sell something you don't use, pause a want, or ask family for a [[qard_hasan]].",
+              "bn": "**একটা বড় ধাক্কা খুঁজুন:** অব্যবহৃত কিছু বিক্রি করুন, কোনো শখ থামিয়ে রাখুন, বা পরিবারের কাছে [[qard_hasan]] চান।"
+            },
+            {
+              "en": "**Never take a new interest loan to pay an old one.** If you've paid interest before, you can make tawbah: sincerely decide not to go back to it.",
+              "bn": "**পুরনো ঋণ শোধ করতে কখনো নতুন সুদের ঋণ নেবেন না।** আগে সুদ দিয়ে থাকলে তওবা করতে পারেন: আন্তরিকভাবে ঠিক করুন, আর সুদে ফিরবেন না।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "You owe ৳40,000 on a card (27% interest) and ৳20,000 to your uncle (no interest). You have ৳15,000 extra this month. Where should it go?",
+            "bn": "কার্ডে ৳৪০,০০০ বাকি (২৭% সুদ), আর চাচার কাছে ৳২০,০০০ ধার (সুদ নেই)। এ মাসে ৳১৫,০০০ বাড়তি আছে। কোথায় দেবেন?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Half to each",
+                "bn": "দুজনকে অর্ধেক অর্ধেক"
+              },
+              "why": {
+                "en": "Your uncle's loan has no interest. Every taka on the card stops interest sooner.",
+                "bn": "চাচার ধারে সুদ নেই। কার্ডে দেওয়া প্রতিটি টাকা সুদ দ্রুত থামায়।"
+              }
+            },
+            {
+              "t": {
+                "en": "All to the card, after talking with your uncle",
+                "bn": "চাচার সাথে কথা বলে, পুরোটা কার্ডে"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. End the interest first, and stay honest with your uncle about when you'll pay him.",
+                "bn": "হ্যাঁ। আগে সুদ শেষ করুন, আর চাচাকে সৎভাবে জানান কবে তাঁর টাকা দেবেন।"
+              }
+            },
+            {
+              "t": {
+                "en": "Keep it, in case I need the card",
+                "bn": "রেখে দিই, কার্ড লাগতে পারে"
+              },
+              "why": {
+                "en": "Keeping cash while paying 27% interest is the most expensive way to save.",
+                "bn": "২৭% সুদ দিতে দিতে টাকা রেখে দেওয়া সবচেয়ে দামি সঞ্চয়।"
+              }
+            },
+            {
+              "t": {
+                "en": "All to my uncle. Family comes first",
+                "bn": "পুরোটা চাচাকে, পরিবার আগে"
+              },
+              "why": {
+                "en": "Family matters, but card interest grows every day. Talk to your uncle, then end the interest.",
+                "bn": "পরিবার গুরুত্বপূর্ণ, কিন্তু কার্ডের সুদ প্রতিদিন বাড়ে। চাচার সাথে কথা বলুন, তারপর সুদ শেষ করুন।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "reflect",
+          "key": "exit_step",
+          "q": {
+            "en": "Which step will you take this week?",
+            "bn": "এই সপ্তাহে কোন ধাপটা নেবেন?"
+          },
+          "options": [
+            {
+              "en": "Stop using the card or taking new installments",
+              "bn": "কার্ড ব্যবহার বা নতুন কিস্তি নেওয়া বন্ধ"
+            },
+            {
+              "en": "Write down every debt",
+              "bn": "সব ঋণ লিখে ফেলা"
+            },
+            {
+              "en": "Find one thing to sell or pause",
+              "bn": "বিক্রি বা থামানোর মতো একটা কিছু খোঁজা"
+            },
+            {
+              "en": "Talk to family about an interest-free loan",
+              "bn": "সুদ ছাড়া ধার নিয়ে পরিবারের সাথে কথা বলা"
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "Every month I owe less. Interest ends first.",
+            "bn": "প্রতি মাসে বাকি কমবে। সুদ শেষ হবে সবার আগে।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cushion",
+      "region": "path",
+      "title": {
+        "en": "Savings before a card",
+        "bn": "কার্ডের আগে জমা"
+      },
+      "minutes": 4,
+      "when": {
+        "any": [
+          {
+            "trait": "buffer",
+            "lte": 1
+          },
+          {
+            "flag": "month_end_gap"
+          },
+          {
+            "flag": "emergency_use"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "story",
+          "figure": "jar",
+          "title": {
+            "en": "Nusrat's \"boring\" account",
+            "bn": "নুসরাতের \"বোরিং\" অ্যাকাউন্ট"
+          },
+          "body": [
+            {
+              "en": "In the same week, Nusrat's phone broke and the ceiling fan stopped working.",
+              "bn": "একই সপ্তাহে নুসরাতের ফোন ভাঙল, আর সিলিং ফ্যানটাও নষ্ট হলো।"
+            },
+            {
+              "en": "She didn't use a card. She had ৳8,000 in a separate account that she never touched. Boring, but enough.",
+              "bn": "সে কার্ড ব্যবহার করেনি। আলাদা একটা অ্যাকাউন্টে তার ৳৮,০০০ ছিল, যা সে কখনো ছোঁয়নি। বোরিং, কিন্তু যথেষ্ট।"
+            },
+            {
+              "en": "Then she slowly filled it again. No interest, no stress.",
+              "bn": "তারপর আস্তে আস্তে আবার জমাল। না সুদ, না দুশ্চিন্তা।"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "Why a card is not an emergency fund",
+            "bn": "কার্ড কেন জরুরি তহবিল নয়"
+          },
+          "points": [
+            {
+              "en": "Problems don't wait for your bill date. If you can't pay back in time, the problem becomes interest.",
+              "bn": "বিপদ বিলের তারিখ মেনে আসে না। সময়মতো শোধ করতে না পারলে বিপদটা সুদে পরিণত হয়।"
+            },
+            {
+              "en": "[[savings|Emergency savings]] is money that's already yours, kept aside only for sudden needs.",
+              "bn": "[[savings|জরুরি জমা]] মানে নিজের টাকা, যা শুধু হঠাৎ দরকারের জন্য আলাদা রাখা।"
+            },
+            {
+              "en": "Start small: 2 weeks of home costs. Then 1 month. Then 3 months.",
+              "bn": "ছোট থেকে শুরু করুন: ২ সপ্তাহের সংসার খরচ। তারপর ১ মাস। তারপর ৩ মাস।"
+            },
+            {
+              "en": "On the day your income arrives, move a small fixed amount to a separate account **first**, before spending.",
+              "bn": "যেদিন আয় আসে, খরচের **আগে** একটা ছোট নির্দিষ্ট অঙ্ক আলাদা অ্যাকাউন্টে সরিয়ে রাখুন।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "What is the best first step to use a card safely?",
+            "bn": "নিরাপদে কার্ড ব্যবহারের সবচেয়ে ভালো প্রথম ধাপ কোনটি?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Get a card with a big limit \"for emergencies\"",
+                "bn": "\"বিপদের জন্য\" বড় লিমিটের কার্ড নেওয়া"
+              },
+              "why": {
+                "en": "A big limit is borrowed money. It turns every emergency into debt.",
+                "bn": "বড় লিমিট মানে ধারের টাকা। এতে প্রতিটি বিপদ ঋণ হয়ে যায়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Keep one month of home costs in a separate account",
+                "bn": "আলাদা অ্যাকাউন্টে ১ মাসের সংসার খরচ জমিয়ে রাখা"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. With savings behind you, a card becomes a convenience, not a lifeline.",
+                "bn": "হ্যাঁ। পেছনে জমা থাকলে কার্ড হয় সুবিধা, বাঁচার ভরসা নয়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Wait for a bigger salary",
+                "bn": "বেতন বাড়ার অপেক্ষা করা"
+              },
+              "why": {
+                "en": "Savings come from habit, not from salary size. Start with whatever you can, even ৳500.",
+                "bn": "জমা আসে অভ্যাস থেকে, বেতনের আকার থেকে না। যা পারেন তা দিয়েই শুরু করুন, ৳৫০০ হলেও।"
+              }
+            },
+            {
+              "t": {
+                "en": "Borrow from a friend to start savings",
+                "bn": "বন্ধুর কাছে ধার নিয়ে জমানো শুরু"
+              },
+              "why": {
+                "en": "Savings made from a loan aren't savings. It's the same weight in a new place.",
+                "bn": "ধারের টাকায় জমা আসলে জমা না। একই বোঝা, শুধু নতুন জায়গায়।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "reflect",
+          "key": "cushion_target",
+          "q": {
+            "en": "What will your first savings goal be?",
+            "bn": "আপনার প্রথম জমার লক্ষ্য কী হবে?"
+          },
+          "options": [
+            {
+              "en": "2 weeks of home costs",
+              "bn": "২ সপ্তাহের সংসার খরচ"
+            },
+            {
+              "en": "1 month of home costs",
+              "bn": "১ মাসের সংসার খরচ"
+            },
+            {
+              "en": "3 months of home costs",
+              "bn": "৩ মাসের সংসার খরচ"
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "Savings first. A card is for ease, not for emergencies.",
+            "bn": "আগে জমা। কার্ড সুবিধার জন্য, বিপদের জন্য না।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rhythm",
+      "region": "path",
+      "title": {
+        "en": "When income has no fixed date",
+        "bn": "যখন আয়ের তারিখ ঠিক থাকে না"
+      },
+      "minutes": 3,
+      "when": {
+        "any": [
+          {
+            "trait": "rhythm",
+            "lte": 1
+          },
+          {
+            "flag": "variable_income"
+          },
+          {
+            "flag": "dependent"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "rhythm",
+          "title": {
+            "en": "Your income can be late. The bill can't.",
+            "bn": "আয় দেরি করতে পারে, বিল পারে না।"
+          },
+          "points": [
+            {
+              "en": "Your income may come late, but the card's [[due]] never moves. That gap is where interest gets in.",
+              "bn": "আপনার আয় দেরিতে আসতে পারে, কিন্তু কার্ডের [[due]] কখনো বদলায় না। এই ফাঁক দিয়েই সুদ ঢোকে।"
+            },
+            {
+              "en": "Use the card only **after** money has reached your account, never for money that is \"coming soon\".",
+              "bn": "টাকা অ্যাকাউন্টে আসার **পরেই** কার্ড ব্যবহার করুন। \"শিগগির আসবে\" এমন টাকার ভরসায় কখনো না।"
+            },
+            {
+              "en": "Ask your bank to set the last day to pay a few days after your income usually comes.",
+              "bn": "ব্যাংককে বলুন, বিল দেওয়ার শেষ দিনটা যেন আপনার আয় সাধারণত যেদিন আসে তার কয়েকদিন পরে হয়।"
+            },
+            {
+              "en": "Turn on [[autopay]] for the full bill.",
+              "bn": "পুরো বিলের জন্য [[autopay]] চালু করুন।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "A client says your payment will come \"next week, insha'Allah\". Your card bill is due in 4 days. What is the safe move?",
+            "bn": "একজন ক্লায়েন্ট বললেন, টাকা আসবে \"আগামী সপ্তাহে, ইনশাআল্লাহ\"। আপনার কার্ডের বিল দেওয়ার আর ৪ দিন বাকি। নিরাপদ কাজ কোনটা?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Keep using the card. The money is coming",
+                "bn": "কার্ড চালিয়ে যাই, টাকা তো আসছে"
+              },
+              "why": {
+                "en": "Money that is coming isn't money yet. If it's late, you pay interest.",
+                "bn": "আসবে-এমন টাকা এখনো টাকা না। দেরি হলে সুদ দিতে হবে।"
+              }
+            },
+            {
+              "t": {
+                "en": "Pay the bill with money I have, and stop spending until the client pays",
+                "bn": "হাতে থাকা টাকায় বিল দিই, ক্লায়েন্টের টাকা না আসা পর্যন্ত খরচ বন্ধ"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. Pay the card first, and spend only money that has arrived.",
+                "bn": "হ্যাঁ। আগে কার্ডের বিল দিন, আর খরচ করুন শুধু হাতে আসা টাকা।"
+              }
+            },
+            {
+              "t": {
+                "en": "Pay the minimum now, the rest later",
+                "bn": "এখন সর্বনিম্ন দিই, বাকিটা পরে"
+              },
+              "why": {
+                "en": "That's exactly how interest starts.",
+                "bn": "সুদ ঠিক এভাবেই শুরু হয়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Take cash from the ATM with the card to pay it",
+                "bn": "কার্ড দিয়ে ATM থেকে টাকা তুলে বিল দিই"
+              },
+              "why": {
+                "en": "ATM cash on a credit card has a fee and interest from day one.",
+                "bn": "ক্রেডিট কার্ডে ATM-এর টাকায় ফি আর প্রথম দিন থেকেই সুদ।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "I spend money that has arrived, never money that is coming.",
+            "bn": "আমি খরচ করি হাতে আসা টাকা, আসবে-এমন টাকা না।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "limit",
+      "region": "path",
+      "title": {
+        "en": "A bigger limit is not a raise",
+        "bn": "বড় লিমিট মানে বেতন বাড়া না"
+      },
+      "minutes": 3,
+      "when": {
+        "all": []
+      },
+      "emphasis": {
+        "any": [
+          {
+            "trait": "restraint",
+            "lte": 3
+          },
+          {
+            "flag": "limit_as_income"
+          },
+          {
+            "flag": "impulsive"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "limitup",
+          "title": {
+            "en": "Why banks raise your limit",
+            "bn": "ব্যাংক কেন লিমিট বাড়ায়"
+          },
+          "points": [
+            {
+              "en": "When your [[limit]] gets bigger, spending more starts to feel normal. It's a trick of the mind.",
+              "bn": "[[limit]] বাড়লে বেশি খরচ করাটা স্বাভাবিক মনে হতে থাকে। এটা মনের একটা ফাঁদ।"
+            },
+            {
+              "en": "Banks earn money when people can't pay the full bill. That's why they raise limits.",
+              "bn": "মানুষ পুরো বিল দিতে না পারলে ব্যাংকের লাভ। এজন্যই তারা লিমিট বাড়ায়।"
+            },
+            {
+              "en": "You can ask for a **smaller** limit. About one month of your spending is enough.",
+              "bn": "আপনি **কম** লিমিট চাইতে পারেন। আপনার এক মাসের খরচের সমান হলেই যথেষ্ট।"
+            },
+            {
+              "en": "Turn on SMS alerts for every purchase, so you always know what you've spent.",
+              "bn": "প্রতিটি কেনাকাটার জন্য SMS অ্যালার্ট চালু রাখুন, যাতে সবসময় জানেন কত খরচ হলো।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "The bank sends a message: \"Congratulations! Your limit is now ৳2,00,000.\" What's the best thing to do?",
+            "bn": "ব্যাংক মেসেজ পাঠাল: \"অভিনন্দন! আপনার লিমিট এখন ৳২,০০,০০০।\" সবচেয়ে ভালো কাজ কোনটা?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Plan the things I've been wanting to buy",
+                "bn": "যা কিনতে চাইছিলাম, এবার তার পরিকল্পনা করি"
+              },
+              "why": {
+                "en": "Your income didn't change. Only the bank's number did.",
+                "bn": "আপনার আয় তো বদলায়নি। বদলেছে শুধু ব্যাংকের সংখ্যা।"
+              }
+            },
+            {
+              "t": {
+                "en": "Change nothing, and maybe ask the bank to keep it lower",
+                "bn": "কিছুই বদলাব না, দরকারে ব্যাংককে কম রাখতে বলব"
+              },
+              "correct": true,
+              "why": {
+                "en": "Exactly. Your spending follows your own money, not the bank's number.",
+                "bn": "একদম। আপনার খরচ চলবে নিজের টাকা দেখে, ব্যাংকের সংখ্যা দেখে না।"
+              }
+            },
+            {
+              "t": {
+                "en": "Use it for a small business or investment",
+                "bn": "ছোট ব্যবসা বা বিনিয়োগে লাগাই"
+              },
+              "why": {
+                "en": "Investing with borrowed money at 25% interest rarely ends well, and it pulls you into interest.",
+                "bn": "২৫% সুদের ধারের টাকায় বিনিয়োগ খুব কমই ভালো হয়, আর এটা আপনাকে সুদে টেনে নেয়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Spend my savings, since the card can cover emergencies now",
+                "bn": "জমা খরচ করে ফেলি, বিপদে তো কার্ড আছে"
+              },
+              "why": {
+                "en": "That swaps your own safety for the bank's loan.",
+                "bn": "এতে নিজের নিরাপত্তার বদলে আসে ব্যাংকের ঋণ।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "My limit is the bank's number. My real number is my own balance.",
+            "bn": "লিমিট ব্যাংকের সংখ্যা। আমার আসল সংখ্যা আমার নিজের ব্যালেন্স।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "big-purchase",
+      "region": "path",
+      "title": {
+        "en": "Buying something big",
+        "bn": "বড় কিছু কেনা"
+      },
+      "minutes": 3,
+      "when": {
+        "any": [
+          {
+            "flag": "big_purchase"
+          },
+          {
+            "flag": "emi_minded"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "savefirst",
+          "title": {
+            "en": "Save first, buy second",
+            "bn": "আগে জমান, পরে কিনুন"
+          },
+          "points": [
+            {
+              "en": "A phone or a fridge is a cost you can **see coming**. You can save for it.",
+              "bn": "ফোন বা ফ্রিজ এমন খরচ, যা **আগে থেকেই জানা**। এর জন্য জমানো যায়।"
+            },
+            {
+              "en": "Divide the price by the number of months you can wait. Put that amount aside every month.",
+              "bn": "দামটাকে যত মাস অপেক্ষা করতে পারবেন, তত দিয়ে ভাগ করুন। প্রতি মাসে সেই টাকা আলাদা রাখুন।"
+            },
+            {
+              "en": "When you have the full amount, buy it. Use the card if you like, then pay the whole bill from your savings.",
+              "bn": "পুরো টাকা জমলে কিনুন। চাইলে কার্ডে কিনুন, তারপর জমা থেকে পুরো বিল দিন।"
+            },
+            {
+              "en": "It's like [[emi|installments]], but backwards: you pay yourself first, and nobody charges you extra.",
+              "bn": "এটা [[emi|কিস্তির]] মতোই, তবে উল্টো: আগে নিজেকে দেন, আর কেউ বাড়তি টাকা নেয় না।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "You want a ৳36,000 phone. Your current phone still works. What's the best plan?",
+            "bn": "আপনি ৳৩৬,০০০-এর একটা ফোন চান। এখনকার ফোনটা এখনো চলে। সবচেয়ে ভালো পরিকল্পনা কোনটা?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Buy it today on 12 monthly installments",
+                "bn": "আজই ১২ মাসের কিস্তিতে কিনি"
+              },
+              "why": {
+                "en": "That ties up a year of your future income, often with fees or interest.",
+                "bn": "এতে আগামী এক বছরের আয় আটকে যায়, প্রায়ই ফি বা সুদসহ।"
+              }
+            },
+            {
+              "t": {
+                "en": "Save ৳6,000 a month for 6 months, then buy it",
+                "bn": "৬ মাস ধরে মাসে ৳৬,০০০ জমিয়ে তারপর কিনি"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. Same phone, no debt, no interest, and maybe a lower price by then.",
+                "bn": "হ্যাঁ। একই ফোন, ঋণ নেই, সুদ নেই, আর তখন হয়তো দামও কমবে।"
+              }
+            },
+            {
+              "t": {
+                "en": "Buy it on the card and pay the minimum",
+                "bn": "কার্ডে কিনে সর্বনিম্ন পরিশোধ করি"
+              },
+              "why": {
+                "en": "That's the most expensive way to buy this phone.",
+                "bn": "এই ফোন কেনার এটাই সবচেয়ে দামি উপায়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Use my emergency savings",
+                "bn": "জরুরি জমা থেকে কিনি"
+              },
+              "why": {
+                "en": "A working phone isn't an emergency. Keep savings for real emergencies.",
+                "bn": "চালু ফোন বদলানো জরুরি অবস্থা না। জমা রাখুন আসল বিপদের জন্য।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "First I save, then I buy.",
+            "bn": "আগে জমাই, তারপর কিনি।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "voyager",
+      "region": "path",
+      "title": {
+        "en": "Using a card abroad",
+        "bn": "বিদেশে কার্ড ব্যবহার"
+      },
+      "minutes": 4,
+      "when": {
+        "any": [
+          {
+            "flag": "travels"
+          },
+          {
+            "trait": "reach",
+            "gte": 3
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "dcc",
+          "title": {
+            "en": "Four things to know before you travel",
+            "bn": "ভ্রমণের আগে চারটি কথা"
+          },
+          "points": [
+            {
+              "en": "Most cards add an **extra 2–3%** on every purchase abroad. Ask your bank before you go.",
+              "bn": "বেশিরভাগ কার্ড বিদেশে প্রতিটি কেনাকাটায় **২–৩% বাড়তি** নেয়। যাওয়ার আগে ব্যাংকে জিজ্ঞেস করুন।"
+            },
+            {
+              "en": "If a card machine asks \"Pay in taka (BDT)?\", say **no** and choose the local currency. The machine's rate is usually worse. ([[dcc|what's this?]])",
+              "bn": "কার্ড মেশিন যদি জিজ্ঞেস করে \"টাকায় (BDT) দেবেন?\", **না** বলে স্থানীয় মুদ্রা বেছে নিন। মেশিনের রেট সাধারণত খারাপ। ([[dcc|এটা কী?]])"
+            },
+            {
+              "en": "Hotels and car rentals may block part of your limit as a deposit for a few days.",
+              "bn": "হোটেল আর গাড়ি ভাড়ার জায়গা কয়েকদিনের জন্য আপনার লিমিটের কিছু অংশ জামানত হিসেবে আটকে রাখতে পারে।"
+            },
+            {
+              "en": "In Bangladesh you need a [[endorsement]] on your passport. And before you leave, keep money aside to pay the whole trip's bill when you're back.",
+              "bn": "বাংলাদেশে পাসপোর্টে [[endorsement]] লাগে। আর যাওয়ার আগেই টাকা আলাদা রাখুন, যাতে ফিরে এসে পুরো ভ্রমণের বিল দিতে পারেন।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "In a shop in Dubai, the card machine asks: \"Pay in AED or BDT?\" Which is usually cheaper?",
+            "bn": "দুবাইয়ের একটা দোকানে কার্ড মেশিন জিজ্ঞেস করছে: \"AED নাকি BDT?\" সাধারণত কোনটা সস্তা?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "BDT, so I know the exact amount",
+                "bn": "BDT, তাহলে ঠিক কত টাকা জানা যায়"
+              },
+              "why": {
+                "en": "That comfort costs extra. The machine's rate usually has a hidden markup.",
+                "bn": "এই আরামের দাম বেশি। মেশিনের রেটে সাধারণত লুকানো বাড়তি থাকে।"
+              }
+            },
+            {
+              "t": {
+                "en": "AED, the local currency",
+                "bn": "AED, স্থানীয় মুদ্রা"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. Let your own bank convert it. It's usually the better rate.",
+                "bn": "হ্যাঁ। রূপান্তর আপনার নিজের ব্যাংককে করতে দিন, সাধারণত সেই রেটই ভালো।"
+              }
+            },
+            {
+              "t": {
+                "en": "Both are always the same",
+                "bn": "দুটো সবসময় একই"
+              },
+              "why": {
+                "en": "They rarely are. That's why the machine asks.",
+                "bn": "খুব কমই একই হয়। এজন্যই মেশিন জিজ্ঞেস করে।"
+              }
+            },
+            {
+              "t": {
+                "en": "Whatever the cashier suggests",
+                "bn": "ক্যাশিয়ার যেটা বলেন"
+              },
+              "why": {
+                "en": "The shop earns money from the conversion.",
+                "bn": "রূপান্তর থেকে দোকানের লাভ হয়।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "I pay for every trip with money I already have at home.",
+            "bn": "প্রতিটি ভ্রমণের খরচ দিই দেশে থাকা নিজের টাকায়।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rewards",
+      "region": "path",
+      "title": {
+        "en": "Points and cashback",
+        "bn": "পয়েন্ট আর ক্যাশব্যাক"
+      },
+      "minutes": 3,
+      "when": {
+        "any": [
+          {
+            "flag": "rewards"
+          },
+          {
+            "trait": "reach",
+            "gte": 2
+          },
+          {
+            "flag": "has_card"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "points",
+          "title": {
+            "en": "Small gift, big risk",
+            "bn": "ছোট উপহার, বড় ঝুঁকি"
+          },
+          "points": [
+            {
+              "en": "Points or cashback give back about **1%**. Card interest takes about **25%** a year. One unpaid bill can wipe out months of points.",
+              "bn": "পয়েন্ট বা ক্যাশব্যাক ফেরত দেয় প্রায় **১%**। কার্ডের সুদ বছরে প্রায় **২৫%**। একবার বিল বাকি থাকলেই মাসের পর মাসের পয়েন্ট শেষ।"
+            },
+            {
+              "en": "Offers like \"Spend ৳10,000 more and get a gift\" make you buy things you didn't plan to buy.",
+              "bn": "\"আরও ৳১০,০০০ খরচ করলে উপহার\" — এমন অফার আপনাকে অপরিকল্পিত জিনিস কেনায়।"
+            },
+            {
+              "en": "Points are only real if you would have bought those things anyway, and you pay the full bill.",
+              "bn": "পয়েন্ট তখনই লাভ, যখন জিনিসগুলো এমনিতেই কিনতেন আর পুরো বিল দেন।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "\"Spend ৳10,000 more this month and get a ৳500 voucher.\" You didn't plan to spend it. Is it worth it?",
+            "bn": "\"এ মাসে আরও ৳১০,০০০ খরচ করুন, পান ৳৫০০-এর ভাউচার।\" আপনার এই খরচের পরিকল্পনা ছিল না। লাভ আছে?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "Yes, I get 5% back",
+                "bn": "হ্যাঁ, ৫% ফেরত পাচ্ছি"
+              },
+              "why": {
+                "en": "You get ৳500 back on ৳10,000 you wouldn't have spent. You're ৳9,500 down.",
+                "bn": "যে ৳১০,০০০ খরচই করতেন না, তাতে ৳৫০০ ফেরত। আসলে আপনার ৳৯,৫০০ কমে গেল।"
+              }
+            },
+            {
+              "t": {
+                "en": "No. Rewards only count on things I'd buy anyway",
+                "bn": "না। এমনিতেই কিনতাম এমন জিনিসেই পুরস্কার লাভ"
+              },
+              "correct": true,
+              "why": {
+                "en": "Exactly. Spending more to get a gift is a loss with a coupon attached.",
+                "bn": "একদম। উপহারের জন্য বাড়তি খরচ মানে কুপন লাগানো লোকসান।"
+              }
+            },
+            {
+              "t": {
+                "en": "Yes, if I pay only the minimum",
+                "bn": "হ্যাঁ, যদি শুধু সর্বনিম্ন দিই"
+              },
+              "why": {
+                "en": "Then you add interest to the loss.",
+                "bn": "তাহলে লোকসানের সাথে সুদও যোগ হলো।"
+              }
+            },
+            {
+              "t": {
+                "en": "Only if the voucher is for a shop I like",
+                "bn": "শুধু যদি পছন্দের দোকানের ভাউচার হয়"
+              },
+              "why": {
+                "en": "Liking the shop is exactly how the bait works.",
+                "bn": "দোকান পছন্দ হওয়াটাই তো টোপের কৌশল।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "I never buy extra just to get points.",
+            "bn": "শুধু পয়েন্টের জন্য আমি বাড়তি কিছু কিনব না।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "alternatives",
+      "region": "keep",
+      "title": {
+        "en": "Cards with no interest at all",
+        "bn": "যে কার্ডে কোনো সুদই নেই"
+      },
+      "minutes": 3,
+      "when": {
+        "all": []
+      },
+      "steps": [
+        {
+          "type": "concept",
+          "figure": "options",
+          "title": {
+            "en": "You may not need a credit card",
+            "bn": "হয়তো ক্রেডিট কার্ডের দরকারই নেই"
+          },
+          "points": [
+            {
+              "en": "**[[debit]]:** turn on online and international use, and it does most of what people want a credit card for. No loan, no interest.",
+              "bn": "**[[debit]]:** অনলাইন আর আন্তর্জাতিক ব্যবহার চালু করলে, মানুষ যে কাজে ক্রেডিট কার্ড চায় তার বেশিরভাগই হয়ে যায়। ধার নেই, সুদ নেই।"
+            },
+            {
+              "en": "**[[prepaid]]:** good for apps and online shopping. You can't spend more than you put in.",
+              "bn": "**[[prepaid]]:** অ্যাপ আর অনলাইন কেনাকাটার জন্য ভালো। যা ভরবেন, তার বেশি খরচ করা যায় না।"
+            },
+            {
+              "en": "**Islamic bank cards:** usually charge a fixed fee instead of interest. Ask for the contract, and check the late-payment rules with a scholar you trust.",
+              "bn": "**ইসলামী ব্যাংকের কার্ড:** সাধারণত সুদের বদলে নির্দিষ্ট ফি নেয়। চুক্তিপত্র চেয়ে নিন, আর দেরিতে দেওয়ার নিয়মগুলো বিশ্বস্ত আলেমের সাথে মিলিয়ে নিন।"
+            }
+          ]
+        },
+        {
+          "type": "quiz",
+          "q": {
+            "en": "You mainly want a card to pay for apps like Netflix or Google. What's the simplest choice with no interest?",
+            "bn": "আপনি মূলত Netflix বা Google-এর মতো অ্যাপের জন্য কার্ড চান। সুদ ছাড়া সবচেয়ে সহজ উপায় কোনটা?"
+          },
+          "options": [
+            {
+              "t": {
+                "en": "A credit card with a big limit",
+                "bn": "বড় লিমিটের ক্রেডিট কার্ড"
+              },
+              "why": {
+                "en": "That's far more borrowing than a ৳1,000 app needs.",
+                "bn": "৳১,০০০-এর একটা অ্যাপের জন্য এটা অনেক বেশি ধার।"
+              }
+            },
+            {
+              "t": {
+                "en": "A debit or prepaid card with online use turned on",
+                "bn": "অনলাইন ব্যবহার চালু করা ডেবিট বা প্রিপেইড কার্ড"
+              },
+              "correct": true,
+              "why": {
+                "en": "Yes. The same ease, and the money is always your own.",
+                "bn": "হ্যাঁ। একই সুবিধা, আর টাকাটা সবসময় আপনার নিজের।"
+              }
+            },
+            {
+              "t": {
+                "en": "Take ATM cash with a credit card every month",
+                "bn": "প্রতি মাসে ক্রেডিট কার্ডে ATM থেকে টাকা তোলা"
+              },
+              "why": {
+                "en": "That's the most expensive option there is.",
+                "bn": "এটাই সবচেয়ে দামি উপায়।"
+              }
+            },
+            {
+              "t": {
+                "en": "Use a friend's card",
+                "bn": "বন্ধুর কার্ড ব্যবহার করা"
+              },
+              "why": {
+                "en": "Then their card, their bill and your friendship are all at risk.",
+                "bn": "তখন তার কার্ড, তার বিল আর আপনাদের বন্ধুত্ব সবই ঝুঁকিতে।"
+              }
+            }
+          ]
+        },
+        {
+          "type": "takeaway",
+          "rule": {
+            "en": "I choose the simplest card that does the job, ideally one with no interest.",
+            "bn": "কাজ চালানোর মতো সবচেয়ে সহজ কার্ড বেছে নেব, সম্ভব হলে সুদ ছাড়া কার্ড।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pledge",
+      "region": "keep",
+      "title": {
+        "en": "My rules",
+        "bn": "আমার নিয়ম"
+      },
+      "minutes": 2,
+      "when": {
+        "all": []
+      },
+      "finale": true,
+      "steps": []
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "close-first",
+      "when": {
+        "any": [
+          {
+            "flag": "has_debt"
+          },
+          {
+            "flag": "has_emi"
+          }
+        ]
+      },
+      "title": {
+        "en": "First, pay off what you owe.",
+        "bn": "আগে বাকি টাকা শোধ করুন।"
+      },
+      "body": {
+        "en": "Don't take a new card or more credit now. Pause new loans and installments, pay the highest-interest debt first, and come back when it's done.",
+        "bn": "এখন নতুন কার্ড বা বাড়তি ধার নেবেন না। নতুন ঋণ আর কিস্তি বন্ধ রাখুন, আগে সবচেয়ে বেশি সুদের ঋণ শোধ করুন, শেষ হলে আবার আসুন।"
+      },
+      "tone": "warn"
+    },
+    {
+      "id": "floor-first",
+      "when": {
+        "any": [
+          {
+            "trait": "buffer",
+            "lte": 1
+          },
+          {
+            "flag": "month_end_gap"
+          }
+        ]
+      },
+      "title": {
+        "en": "Build savings first, then get a card.",
+        "bn": "আগে জমান, তারপর কার্ড নিন।"
+      },
+      "body": {
+        "en": "For now, a debit or prepaid card can do almost everything. When you have at least one month of savings, a small-limit credit card can be safe.",
+        "bn": "এখনকার জন্য ডেবিট বা প্রিপেইড কার্ডেই প্রায় সব কাজ হয়ে যাবে। অন্তত এক মাসের জমা হলে, ছোট লিমিটের ক্রেডিট কার্ড নিরাপদ হতে পারে।"
+      },
+      "tone": "calm"
+    },
+    {
+      "id": "guardrails",
+      "when": {
+        "any": [
+          {
+            "trait": "restraint",
+            "lte": 3
+          },
+          {
+            "metric": "accuracy",
+            "lt": 0.7
+          }
+        ]
+      },
+      "title": {
+        "en": "You can get a card, with some safety steps.",
+        "bn": "কার্ড নিতে পারেন, কিছু সুরক্ষা মেনে।"
+      },
+      "body": {
+        "en": "Keep the limit small (about one month of spending), turn on SMS for every purchase, set auto-pay for the full bill, and read again any lesson you found hard.",
+        "bn": "লিমিট ছোট রাখুন (এক মাসের খরচের মতো), প্রতিটি কেনাকাটায় SMS চালু রাখুন, পুরো বিলের অটো-পে করুন, আর যে পাঠ কঠিন লেগেছে তা আবার পড়ুন।"
+      },
+      "tone": "calm"
+    },
+    {
+      "id": "ready",
+      "when": {
+        "all": []
+      },
+      "title": {
+        "en": "You're ready to use a card the right way.",
+        "bn": "আপনি সঠিকভাবে কার্ড ব্যবহারের জন্য প্রস্তুত।"
+      },
+      "body": {
+        "en": "Pay the full bill every month, only with money you already have. Do this and the card won't charge you any interest. If you're unsure about signing a card contract at all, ask a scholar you trust, or use a debit or prepaid card.",
+        "bn": "প্রতি মাসে পুরো বিল দিন, শুধু হাতে থাকা টাকা দিয়ে। এটুকু মানলে কার্ডে আপনার কোনো সুদ লাগবে না। কার্ডের চুক্তিতে সই করা নিয়ে দ্বিধা থাকলে বিশ্বস্ত আলেমকে জিজ্ঞেস করুন, অথবা ডেবিট বা প্রিপেইড কার্ড ব্যবহার করুন।"
+      },
+      "tone": "good"
+    }
+  ],
+  "pledge": [
+    {
+      "en": "I spend on the card only money I already have.",
+      "bn": "যে টাকা আমার কাছে আছে, শুধু সেটুকুই কার্ডে খরচ করব।"
+    },
+    {
+      "en": "I pay the full bill every month, before the last day.",
+      "bn": "প্রতি মাসে শেষ দিনের আগে পুরো বিল দেব।"
+    },
+    {
+      "en": "I never take cash from an ATM with a credit card.",
+      "bn": "ক্রেডিট কার্ড দিয়ে কখনো ATM থেকে টাকা তুলব না।"
+    },
+    {
+      "en": "I never pay only the minimum.",
+      "bn": "কখনো শুধু সর্বনিম্ন পরিশোধ দেব না।"
+    },
+    {
+      "en": "I never buy extra just to get points.",
+      "bn": "শুধু পয়েন্টের জন্য বাড়তি কিছু কিনব না।"
+    },
+    {
+      "en": "The limit is the bank's money. My balance is my money.",
+      "bn": "লিমিট ব্যাংকের টাকা। ব্যালেন্সটাই আমার টাকা।"
+    }
+  ]
+}
